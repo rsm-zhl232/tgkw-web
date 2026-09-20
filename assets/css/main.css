@@ -119,6 +119,13 @@ html[data-lang="zh"] [data-lang="en"]{ display:none !important; }
 .h1{ font-size:clamp(32px,4.6vw,64px); line-height:1.05; letter-spacing:-.03em; font-weight:500; text-wrap:balance; }
 .h2{ font-size:clamp(26px,3.2vw,44px); line-height:1.1;  letter-spacing:-.025em; font-weight:500; text-wrap:balance; }
 .h3{ font-size:clamp(19px,1.6vw,24px); line-height:1.25; letter-spacing:-.015em; font-weight:500; }
+/* Second layer under a headline: the plain-language line stays memorable,
+   this states the same thing in the terms a client's technical reader uses.
+   Sits between the heading and the .lede paragraph. */
+.h-sub{ font-size:clamp(17px,1.5vw,23px); line-height:1.45; font-weight:400;
+  letter-spacing:-.015em; color:var(--fg); max-width:46ch;
+  margin-top:clamp(16px,1.6vw,24px); }
+.h-sub + .lede{ margin-top:clamp(14px,1.4vw,20px); }
 .lede{ font-size:clamp(17px,1.35vw,21px); line-height:1.55; color:var(--muted); max-width:62ch; }
 .body{ color:var(--muted); max-width:66ch; }
 .small{ font-size:14px; color:var(--muted); }
@@ -126,6 +133,29 @@ html[data-lang="zh"] [data-lang="en"]{ display:none !important; }
 .accent{ color:var(--brand-lift); }
 html[data-lang="zh"] .display,
 html[data-lang="zh"] .h1{ letter-spacing:-.01em; line-height:1.12; }
+
+/* ---- 5b. Announcement pill ----------------------------------------------
+   A restrained "what is coming" marker for the hero. Deliberately small —
+   the page is a credentials document, not a launch page. The dot pulses only
+   where motion is allowed; `prefers-reduced-motion` stops it globally.
+   ------------------------------------------------------------------------ */
+.ann{ display:inline-flex; align-items:center; gap:10px;
+  padding:7px 14px 7px 12px; margin-bottom:22px;
+  border:1px solid color-mix(in srgb, var(--brand-lift) 38%, var(--line));
+  border-radius:100px; background:color-mix(in srgb, var(--brand) 12%, transparent);
+  font-family:var(--font-mono); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--fg); transition:.25s var(--ease); }
+a.ann:hover{ border-color:var(--brand-lift);
+  background:color-mix(in srgb, var(--brand) 22%, transparent); }
+.ann__dot{ position:relative; width:7px; height:7px; border-radius:50%;
+  background:var(--brand-lift); flex:0 0 auto; }
+.ann__dot::after{ content:""; position:absolute; inset:0; border-radius:50%;
+  background:var(--brand-lift); animation:annPulse 2.4s var(--ease) infinite; }
+@keyframes annPulse{ 0%{ opacity:.7; transform:scale(1) } 70%,100%{ opacity:0; transform:scale(3.2) } }
+.ann__sep{ width:1px; height:11px; background:color-mix(in srgb, var(--fg) 26%, transparent); }
+.ann em{ font-style:normal; color:var(--muted); }
+.ann .arw{ transition:transform .25s var(--ease); }
+a.ann:hover .arw{ transform:translateX(3px); }
 
 /* ---- 6. Buttons --------------------------------------------------------- */
 .btn{
