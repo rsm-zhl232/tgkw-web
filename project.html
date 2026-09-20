@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project — Tiangong Kaiwu</title>
+<meta name="description" content="Project case study — Tiangong Kaiwu digital construction delivery.">
+<link rel="icon" href="assets/img/tgkw_logo.png">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header data-hdr></header>
+
+<main data-project-detail>
+  <section class="phero">
+    <div class="blueprint"></div>
+    <div class="wrap">
+      <p class="mono accent reveal" style="margin-bottom:20px" data-field="cat"></p>
+      <h1 class="h1 reveal" data-delay="60" style="max-width:20ch" data-field="title"></h1>
+      <p class="lede reveal" data-delay="120" data-field="summary"></p>
+      <div class="btn-row reveal" data-delay="180">
+        <a class="btn btn--ghost" href="projects.html">
+          <span class="arw" style="transform:scaleX(-1)">→</span>
+          <span data-lang="en">All projects</span><span data-lang="zh">全部项目</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <dl class="meta-row meta-row--wide reveal" style="margin-top:0">
+        <div><dt><span data-lang="en">Client</span><span data-lang="zh">业主</span></dt>
+          <dd data-field="client"></dd></div>
+        <div><dt><span data-lang="en">Sector</span><span data-lang="zh">类型</span></dt>
+          <dd data-field="cat"></dd></div>
+        <div><dt><span data-lang="en">Location</span><span data-lang="zh">项目地点</span></dt>
+          <dd data-field="location"></dd></div>
+        <div><dt><span data-lang="en">Floor area</span><span data-lang="zh">建筑面积</span></dt>
+          <dd data-field="area"></dd></div>
+        <div><dt><span data-lang="en">Scope</span><span data-lang="zh">服务范围</span></dt>
+          <dd data-field="scope"></dd></div>
+        <div><dt><span data-lang="en">Year</span><span data-lang="zh">年份</span></dt>
+          <dd data-field="year"></dd></div>
+      </dl>
+
+      <!-- Photos come from the project's `gallery` list in assets/js/data.js -->
+      <div class="gallery reveal" data-project-media></div>
+
+      <!-- Write-up. Hidden until the project in data.js has a `detail` field:
+           detail:  { en: "…", zh: "…" }              one or more paragraphs
+           results: [{ en: "…", zh: "…" }, …]         the ticked list
+           Without them the page shows just the facts and the photos, rather
+           than placeholder text. -->
+      <div class="grid grid--sidecar mt-l" data-project-writeup hidden>
+        <h2 class="h2 reveal">
+          <span data-lang="en">What we did</span><span data-lang="zh">我们做了什么</span>
+        </h2>
+        <div>
+          <p class="lede reveal" data-delay="60" data-project-prose></p>
+          <ul class="checks reveal" data-delay="120" data-project-results hidden></ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--tight" data-surface="alt">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="num">→</span>
+        <span data-lang="en">Related projects</span><span data-lang="zh">相关项目</span></p>
+      <div class="grid grid--3" data-project-more></div>
+    </div>
+  </section>
+</main>
+
+<footer data-ftr></footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

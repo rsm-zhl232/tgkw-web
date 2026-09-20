@@ -1,0 +1,606 @@
+{
+  "catalogue": [
+    {
+      "slug": "djy",
+      "name": "江西保利文化艺术城大剧院项目",
+      "category": "政府公建"
+    },
+    {
+      "slug": "museum",
+      "name": "东莞市博物馆新馆建设项目",
+      "category": "政府公建"
+    },
+    {
+      "slug": "lzcenter",
+      "name": "江西省红谷滩区留置分中心建设项目",
+      "category": "政府公建"
+    },
+    {
+      "slug": "hainan",
+      "name": "海南国际双交中心项目",
+      "category": "政府公建"
+    },
+    {
+      "slug": "syjd",
+      "name": "石岩街道规划一路（建工一路-建工东路）新建工程",
+      "category": "政府公建"
+    },
+    {
+      "slug": "cahjf",
+      "name": "东莞长安和锦府",
+      "category": "住宅"
+    },
+    {
+      "slug": "wtzh",
+      "name": "文投·中恒样式园项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "shty",
+      "name": "上海世博天悦项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "lyf",
+      "name": "南昌市珑悦府项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "whysc",
+      "name": "南昌保利文化艺术城项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "sy01b",
+      "name": "三亚市保利·天珺01B地块项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "qhy",
+      "name": "深圳市青谷群青花园项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "hcdh",
+      "name": "广州市天河区保利华创都荟天珺项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "hshy",
+      "name": "东莞厚街和颂花园项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "sybl",
+      "name": "三亚保利天珺项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "mtxm",
+      "name": "三亚保利漫海棠项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "syty",
+      "name": "三亚棠隐项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "cbd",
+      "name": "东莞南城CBD项目",
+      "category": "住宅"
+    },
+    {
+      "slug": "crland",
+      "name": "成都华润二十四城",
+      "category": "住宅"
+    },
+    {
+      "slug": "riverside",
+      "name": "佛山保利和悦滨江",
+      "category": "住宅"
+    },
+    {
+      "slug": "tengxun",
+      "name": "腾讯深圳总部项目",
+      "category": "办公"
+    },
+    {
+      "slug": "wlkjc",
+      "name": "北京未来科技城项目",
+      "category": "办公"
+    },
+    {
+      "slug": "xtcx",
+      "name": "协同创新区-五期创新空间3#楼装修设计项目",
+      "category": "办公"
+    },
+    {
+      "slug": "qhds",
+      "name": "北京中国期货大厦项目",
+      "category": "办公"
+    },
+    {
+      "slug": "zxtx",
+      "name": "中兴通讯超级总部基地",
+      "category": "办公"
+    },
+    {
+      "slug": "q_plex",
+      "name": "侨城坊 2 号楼",
+      "category": "办公"
+    },
+    {
+      "slug": "hehong",
+      "name": "鸿合大厦",
+      "category": "办公"
+    },
+    {
+      "slug": "xinda",
+      "name": "信达金茂广场",
+      "category": "办公"
+    },
+    {
+      "slug": "zhengbang",
+      "name": "正邦大数据产业园科研中心",
+      "category": "办公"
+    },
+    {
+      "slug": "nanfeng",
+      "name": "南丰县文化产业大厦",
+      "category": "办公"
+    },
+    {
+      "slug": "tjxm",
+      "name": "山西太原天珺项目",
+      "category": "商业"
+    },
+    {
+      "slug": "jmnsyh",
+      "name": "江门农商银行新总部大楼项目",
+      "category": "商业"
+    },
+    {
+      "slug": "ktjt",
+      "name": "康泰集团大厦室内装修、BIM设计",
+      "category": "商业"
+    },
+    {
+      "slug": "blthq",
+      "name": "保利天河区临江大道北侧AT080722地块（南方面粉厂）项目",
+      "category": "商业"
+    },
+    {
+      "slug": "blsb",
+      "name": "上海保利世博项目",
+      "category": "商业"
+    },
+    {
+      "slug": "hgjr",
+      "name": "上海市浦东花木行政文化中心商办项目",
+      "category": "商业"
+    },
+    {
+      "slug": "kfc",
+      "name": "百胜中国营建BIM数字化设计-族库及智能化开发",
+      "category": "商业"
+    },
+    {
+      "slug": "liketea",
+      "name": "喜茶空间设计项目",
+      "category": "商业"
+    },
+    {
+      "slug": "mtthree",
+      "name": "茅台第三代专卖店项目设计服务",
+      "category": "商业"
+    },
+    {
+      "slug": "hrwj",
+      "name": "华润万家工程设计服务项目",
+      "category": "商业"
+    },
+    {
+      "slug": "jiangmen",
+      "name": "江门保利国际广场",
+      "category": "商业"
+    },
+    {
+      "slug": "shaoguan",
+      "name": "韶关保利中宇广场",
+      "category": "商业"
+    },
+    {
+      "slug": "scny",
+      "name": "长沙诺雅酒店项目",
+      "category": "酒店"
+    },
+    {
+      "slug": "crowne_plaza",
+      "name": "江门保利皇冠假日酒店",
+      "category": "酒店"
+    },
+    {
+      "slug": "tjxt",
+      "name": "保利天珺秀台项目",
+      "category": "酒店"
+    },
+    {
+      "slug": "yinling",
+      "name": "银领国际会所",
+      "category": "会所"
+    },
+    {
+      "slug": "conference_center",
+      "name": "北京大学第三医院国际会议交流中心",
+      "category": "会议中心"
+    },
+    {
+      "slug": "szdpyy",
+      "name": "深圳大鹏新区人民医院项目",
+      "category": "医院"
+    },
+    {
+      "slug": "bjthreeyy",
+      "name": "北京大学第三医院国家区域医疗中心项目",
+      "category": "医院"
+    },
+    {
+      "slug": "zsfirstyy",
+      "name": "中山大学附属第一医院复合手术室项目",
+      "category": "医院"
+    },
+    {
+      "slug": "chzyy",
+      "name": "珲春中医医院朝医医院医养结合项目",
+      "category": "医院"
+    },
+    {
+      "slug": "maternal_and_child_health_hospital",
+      "name": "清远市妇幼保健院妇女儿童保健中心大楼建设工程",
+      "category": "医院"
+    },
+    {
+      "slug": "hospital",
+      "name": "阳山县人民医院发热门诊及感染科改（扩）建工程",
+      "category": "医院"
+    },
+    {
+      "slug": "hunchun",
+      "name": "珲春中医医院朝医医院",
+      "category": "医院"
+    },
+    {
+      "slug": "xigu",
+      "name": "西安西谷医院门诊医技楼",
+      "category": "医院"
+    },
+    {
+      "slug": "laboratory",
+      "name": "广东省疾病预防控制中心新冠肺炎核酸检测平台实验室",
+      "category": "医院"
+    },
+    {
+      "slug": "maoming_olympic_sports_center",
+      "name": "茂名市奥林匹克体育中心项目",
+      "category": "体育场馆"
+    },
+    {
+      "slug": "qingyuan",
+      "name": "清远奥林匹克体育中心",
+      "category": "体育场馆"
+    },
+    {
+      "slug": "sichuan",
+      "name": "正邦集团育肥舍",
+      "category": "工业建筑"
+    },
+    {
+      "slug": "hyschool",
+      "name": "东莞市慧雅学校项目",
+      "category": "学校"
+    },
+    {
+      "slug": "jwhk",
+      "name": "九围河库湾水源林项目",
+      "category": "水务"
+    }
+  ],
+  "scraped": {
+    "poly-grand-theatre": {
+      "slug": "djy",
+      "name": "江西保利文化艺术城大剧院项目",
+      "use_type": "政府公建",
+      "address": "江西省南昌市",
+      "floor_area": "45000 ㎡",
+      "developer": "南昌保和置业有限公司",
+      "fields": {
+        "项目名称": "江西保利文化艺术城大剧院项目",
+        "项目地址": "江西省南昌市",
+        "建筑面积": "45000 ㎡",
+        "建设单位": "南昌保和置业有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/160-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/20.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/21.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/22.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/23.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/24.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/25.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/26.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/27.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/28.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/29.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/30.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/31.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/32.jpeg",
+        "https://data.tgku.com/data/project_case/2025-07-14/33.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/34.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/djy/list.html",
+      "local_images": [
+        "assets/img/projects/poly-grand-theatre-01.jpg",
+        "assets/img/projects/poly-grand-theatre-02.jpg",
+        "assets/img/projects/poly-grand-theatre-03.jpg",
+        "assets/img/projects/poly-grand-theatre-04.jpg",
+        "assets/img/projects/poly-grand-theatre-05.jpg",
+        "assets/img/projects/poly-grand-theatre-06.jpg"
+      ]
+    },
+    "tencent-hq": {
+      "slug": "tengxun",
+      "name": "腾讯深圳总部项目",
+      "use_type": "办公",
+      "address": "深圳市",
+      "floor_area": "56000 ㎡",
+      "developer": "腾讯科技（深圳）有限公司",
+      "fields": {
+        "项目名称": "腾讯深圳总部项目",
+        "项目地址": "深圳市",
+        "建筑面积": "56000 ㎡",
+        "建设单位": "腾讯科技（深圳）有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/199.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/200.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/201.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/202.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/203.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/204.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/205.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/tengxun/list.html",
+      "local_images": [
+        "assets/img/projects/tencent-hq-01.jpg",
+        "assets/img/projects/tencent-hq-02.jpg",
+        "assets/img/projects/tencent-hq-03.jpg",
+        "assets/img/projects/tencent-hq-04.jpg",
+        "assets/img/projects/tencent-hq-05.jpg",
+        "assets/img/projects/tencent-hq-06.jpg"
+      ]
+    },
+    "zte-supercampus": {
+      "slug": "zxtx",
+      "name": "中兴通讯超级总部基地",
+      "use_type": "办公",
+      "address": "深圳市南山区",
+      "floor_area": "62966 ㎡",
+      "developer": "中兴通讯股份有限公司",
+      "fields": {
+        "项目名称": "中兴通讯超级总部基地",
+        "项目地址": "深圳市南山区",
+        "建筑面积": "62966 ㎡",
+        "建设单位": "中兴通讯股份有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/244.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/245.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/246.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/247.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/248.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/249.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/250.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/251.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/zxtx/list.html",
+      "local_images": [
+        "assets/img/projects/zte-supercampus-01.jpg",
+        "assets/img/projects/zte-supercampus-02.jpg",
+        "assets/img/projects/zte-supercampus-03.jpg",
+        "assets/img/projects/zte-supercampus-04.jpg",
+        "assets/img/projects/zte-supercampus-05.jpg",
+        "assets/img/projects/zte-supercampus-06.jpg"
+      ]
+    },
+    "dongguan-museum": {
+      "slug": "museum",
+      "name": "东莞市博物馆新馆建设项目",
+      "use_type": "政府公建",
+      "address": "广东省东莞市",
+      "floor_area": "39904.64 ㎡",
+      "developer": "保利发展湾区公司",
+      "fields": {
+        "项目名称": "东莞市博物馆新馆建设项目",
+        "项目地址": "广东省东莞市",
+        "建筑面积": "39904.64 ㎡",
+        "建设单位": "保利发展湾区公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/151.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/152.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/153.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/154.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/155.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/156.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/157.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/158.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/159.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/museum/list.html",
+      "local_images": [
+        "assets/img/projects/dongguan-museum-01.jpg",
+        "assets/img/projects/dongguan-museum-02.jpg",
+        "assets/img/projects/dongguan-museum-03.jpg",
+        "assets/img/projects/dongguan-museum-04.jpg",
+        "assets/img/projects/dongguan-museum-05.jpg",
+        "assets/img/projects/dongguan-museum-06.jpg"
+      ]
+    },
+    "puh3-medical-centre": {
+      "slug": "bjthreeyy",
+      "name": "北京大学第三医院国家区域医疗中心项目",
+      "use_type": "医院",
+      "address": "河北省张家口市",
+      "floor_area": "137446.44",
+      "developer": "北京大学第三医院",
+      "fields": {
+        "项目名称": "北京大学第三医院国家区域医疗中心项目",
+        "项目地址": "河北省张家口市",
+        "建筑面积": "137446.44",
+        "建设单位": "北京大学第三医院"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/001.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/02.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/03.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/04.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/05.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/06.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/07.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/08.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/09.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/10.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/11.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/333.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/bjthreeyy/list.html",
+      "local_images": [
+        "assets/img/projects/puh3-medical-centre-01.jpg",
+        "assets/img/projects/puh3-medical-centre-02.jpg",
+        "assets/img/projects/puh3-medical-centre-03.jpg",
+        "assets/img/projects/puh3-medical-centre-04.jpg",
+        "assets/img/projects/puh3-medical-centre-05.jpg",
+        "assets/img/projects/puh3-medical-centre-06.jpg"
+      ]
+    },
+    "maoming-olympic": {
+      "slug": "maoming_olympic_sports_center",
+      "name": "茂名市奥林匹克体育中心项目",
+      "use_type": "体育场馆",
+      "address": "广东茂名",
+      "floor_area": "193393 ㎡",
+      "developer": "华南保利集团",
+      "fields": {
+        "项目名称": "茂名市奥林匹克体育中心项目",
+        "项目地址": "广东茂名",
+        "建筑面积": "193393 ㎡",
+        "建设单位": "华南保利集团"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/122-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/123-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/124-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/125.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/126.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/127-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/128.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/129-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/130.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/131-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/122.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/131.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/132.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/134.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/123.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/124.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/127.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/129.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/maoming_olympic_sports_center/list.html",
+      "local_images": [
+        "assets/img/projects/maoming-olympic-01.jpg",
+        "assets/img/projects/maoming-olympic-02.jpg",
+        "assets/img/projects/maoming-olympic-03.jpg",
+        "assets/img/projects/maoming-olympic-04.jpg",
+        "assets/img/projects/maoming-olympic-05.jpg",
+        "assets/img/projects/maoming-olympic-06.jpg"
+      ]
+    },
+    "heytea-spaces": {
+      "slug": "liketea",
+      "name": "喜茶空间设计项目",
+      "use_type": "商业",
+      "address": "",
+      "floor_area": "",
+      "developer": "喜茶（深圳美西西餐饮管理有限公司）",
+      "fields": {
+        "项目名称": "喜茶空间设计项目",
+        "项目地址": "",
+        "建设单位": "喜茶（深圳美西西餐饮管理有限公司）"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/121.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/liketea/list.html",
+      "local_images": [
+        "assets/img/projects/heytea-spaces-01.jpg"
+      ]
+    },
+    "yum-china": {
+      "slug": "kfc",
+      "name": "百胜中国营建BIM数字化设计-族库及智能化开发",
+      "use_type": "商业",
+      "address": "",
+      "floor_area": "",
+      "developer": "百胜中国控股有限公司",
+      "fields": {
+        "项目名称": "百胜中国营建BIM数字化设计-族库及智能化开发",
+        "项目地址": "",
+        "建设单位": "百胜中国控股有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/98.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/99.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/100.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/101.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/kfc/list.html",
+      "local_images": [
+        "assets/img/projects/yum-china-01.jpg",
+        "assets/img/projects/yum-china-02.jpg",
+        "assets/img/projects/yum-china-03.jpg",
+        "assets/img/projects/yum-china-04.jpg"
+      ]
+    },
+    "changsha-nuoya-hotel": {
+      "slug": "scny",
+      "name": "长沙诺雅酒店项目",
+      "use_type": "酒店",
+      "address": "湖南省长沙市岳麓区",
+      "floor_area": "23345 ㎡",
+      "developer": "长沙市柏宁酒店管理有限公司",
+      "fields": {
+        "项目名称": "长沙诺雅酒店项目",
+        "项目地址": "湖南省长沙市岳麓区",
+        "建筑面积": "23345 ㎡",
+        "建设单位": "长沙市柏宁酒店管理有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/178.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/179.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/180.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/181.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/182.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/scny/list.html",
+      "local_images": [
+        "assets/img/projects/changsha-nuoya-hotel-01.jpg",
+        "assets/img/projects/changsha-nuoya-hotel-02.jpg",
+        "assets/img/projects/changsha-nuoya-hotel-03.jpg",
+        "assets/img/projects/changsha-nuoya-hotel-04.jpg",
+        "assets/img/projects/changsha-nuoya-hotel-05.jpg"
+      ]
+    }
+  }
+}

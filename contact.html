@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Tiangong Kaiwu</title>
+<meta name="description" content="Talk to Tiangong Kaiwu about design delivery, the DFC platform, TAI or training.">
+<link rel="icon" href="assets/img/tgkw_logo.png">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header data-hdr></header>
+
+<main>
+  <section class="phero">
+    <div class="blueprint"></div>
+    <div class="wrap">
+      <p class="mono accent reveal" style="margin-bottom:20px">07 / <span data-lang="en">CONTACT</span><span data-lang="zh">联系</span></p>
+      <h1 class="h1 reveal" data-delay="60" style="max-width:18ch">
+        <span data-lang="en">Tell us the scope and the deadline</span>
+        <span data-lang="zh">告诉我们范围与工期</span>
+      </h1>
+      <p class="lede reveal" data-delay="120">
+        <span data-lang="en">We reply within one working day, in English or Chinese.</span>
+        <span data-lang="zh">我们会在一个工作日内回复，中英文均可。</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid--sidecar">
+        <div>
+          <h2 class="h3 reveal"><span data-lang="en">Direct</span><span data-lang="zh">直接联系</span></h2>
+          <dl class="deflist reveal mt-m" data-delay="60">
+            <div><dt><span data-lang="en">Enquiries</span><span data-lang="zh">业务咨询</span></dt>
+              <dd><a class="link" href="mailto:hello@tgkw.com">hello@tgkw.com</a></dd></div>
+            <div><dt><span data-lang="en">Phone</span><span data-lang="zh">电话</span></dt>
+              <dd>+86 ___ ____ ____</dd></div>
+            <div><dt><span data-lang="en">Office</span><span data-lang="zh">办公地点</span></dt>
+              <dd><span data-lang="en">Shenzhen, Guangdong, China</span><span data-lang="zh">广东省深圳市</span></dd></div>
+            <div><dt>AI</dt>
+              <dd><a class="link" href="https://tgtai.com" target="_blank" rel="noopener">tgtai.com <span class="arw">→</span></a></dd></div>
+          </dl>
+        </div>
+
+        <form class="reveal" data-delay="120" id="tg-form"
+              onsubmit="event.preventDefault(); this.querySelector('.form-note').hidden=false;">
+          <div class="grid grid--2" style="gap:20px">
+            <div class="field">
+              <label for="f-name"><span data-lang="en">Name</span><span data-lang="zh">姓名</span></label>
+              <input id="f-name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="f-org"><span data-lang="en">Company</span><span data-lang="zh">公司</span></label>
+              <input id="f-org" name="company">
+            </div>
+            <div class="field">
+              <label for="f-mail"><span data-lang="en">Email</span><span data-lang="zh">邮箱</span></label>
+              <input id="f-mail" name="email" type="email" required>
+            </div>
+            <div class="field">
+              <label for="f-topic"><span data-lang="en">Topic</span><span data-lang="zh">咨询方向</span></label>
+              <select id="f-topic" name="topic">
+                <option value="services">Design services / 设计服务</option>
+                <option value="dfc">DFC platform / DFC 平台</option>
+                <option value="tai">TAI / 人工智能</option>
+                <option value="academy">Training / 培训</option>
+                <option value="partner">Partnership / 合作与代理</option>
+              </select>
+            </div>
+          </div>
+          <div class="field mt-m">
+            <label for="f-msg"><span data-lang="en">Project &amp; timeline</span><span data-lang="zh">项目与工期</span></label>
+            <textarea id="f-msg" name="message" required></textarea>
+          </div>
+          <div class="btn-row">
+            <button class="btn btn--primary" type="submit">
+              <span data-lang="en">Send</span><span data-lang="zh">提交</span> <span class="arw">→</span></button>
+          </div>
+          <p class="small form-note" hidden style="color:var(--brand-lift)">
+            <span data-lang="en">Front-end only — connect this form to your backend or a form service.</span>
+            <span data-lang="zh">当前为前端演示——请将表单接入后端或表单服务。</span>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-ftr></footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

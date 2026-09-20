@@ -1,0 +1,19 @@
+# ── Source material, not part of the website ─────────────────────────────
+# The decks and original brochures these pages were written from. They are
+# too big for git — the company profile deck alone is 274 MB, past GitHub's
+# 100 MB hard limit — and nothing on the site loads them. Keep them in the
+# company drive; the figures they back up are listed in README.md under
+# "Where the numbers come from".
+*.pptx
+/0902-天宫开物产教融合宣传册.pdf
+/20260707-DFC数字建造的项目应用.pdf
+/TAI+DFC工作流｜数字化设计系统(1).pdf
+
+# TAI before/after originals, ~56 MB of full-size PNG/JPG. The site serves
+# only the optimised copies in pairs/, which ARE tracked. README.md has the
+# script that regenerates them if an example needs swapping.
+assets/img/tai/*
+!assets/img/tai/pairs/
+
+# macOS
+.DS_Store
