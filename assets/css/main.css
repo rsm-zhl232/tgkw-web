@@ -736,6 +736,122 @@ a.card:hover{ border-color:color-mix(in srgb, var(--brand-lift) 55%, var(--line)
 }
 body.is-locked{ overflow:hidden; }
 
+/* ---- 23e. Group structure -----------------------------------------------
+   The parent sits on its own row; the two operating companies hang off it on
+   a connector. Reads as a structure rather than a list of names. Collapses to
+   a plain stack on a phone, where the connectors would be more noise than help.
+   ------------------------------------------------------------------------ */
+.org{ margin-top:clamp(28px,3.5vw,44px); }
+.org__lead{ position:relative; border:1px solid var(--line);
+  border-left:2px solid var(--brand); border-radius:var(--radius-lg);
+  background:var(--bg-2); padding:clamp(22px,2.6vw,32px); }
+.org__tag{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--brand-lift); }
+.org__name{ margin-top:12px; font-size:clamp(19px,1.8vw,25px); font-weight:500;
+  letter-spacing:-.02em; }
+.org__en{ display:block; margin-top:5px; font-size:13px; color:var(--faint);
+  font-family:var(--font-mono); letter-spacing:.04em; }
+.org__d{ margin-top:14px; font-size:15px; line-height:1.6; color:var(--muted); max-width:62ch; }
+
+/* Connector: one stem down from the parent, then a rail across to each child. */
+.org__branch{ position:relative; display:grid; grid-template-columns:repeat(2,1fr);
+  gap:clamp(16px,2vw,28px); margin-top:52px; }
+.org__branch::before{ content:""; position:absolute; left:50%; top:-52px;
+  width:1px; height:26px; background:var(--line); }
+.org__branch::after{ content:""; position:absolute; top:-26px;
+  left:25%; right:25%; height:1px; background:var(--line); }
+.org__node{ position:relative; border:1px solid var(--line); border-radius:var(--radius-lg);
+  background:var(--bg-2); padding:clamp(20px,2.2vw,28px); }
+.org__node::before{ content:""; position:absolute; left:50%; top:-26px;
+  width:1px; height:26px; background:var(--line); }
+.org__node .org__name{ font-size:clamp(16px,1.3vw,19px); }
+.org__hold{ display:inline-flex; align-items:center; gap:7px; margin-top:16px;
+  padding:5px 11px; border:1px solid var(--line); border-radius:100px;
+  font-family:var(--font-mono); font-size:10.5px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); }
+.org__hold i{ width:5px; height:5px; border-radius:50%; background:var(--brand-lift);
+  font-style:normal; }
+@media (max-width:720px){
+  .org__branch{ grid-template-columns:1fr; gap:14px; margin-top:14px; }
+  .org__branch::before,.org__branch::after,.org__node::before{ display:none; }
+}
+
+/* ---- 23f. Product loop --------------------------------------------------
+   Six products on a ring. When the section scrolls in, the ring draws itself
+   once, the nodes land one after another clockwise from the top, and a dot
+   keeps orbiting — the point being that the chain closes rather than ending.
+   Node positions come from --x/--y set inline by site.js, so the order of
+   TG.productLine is the order around the circle.
+   Below 860px the ring is dropped for a stacked list: at that width the
+   labels would collide and the geometry stops carrying meaning.
+   ------------------------------------------------------------------------ */
+.loop{ position:relative; width:min(100%,680px); margin-inline:auto;
+  aspect-ratio:1; }
+
+.loop__ring{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+.loop__track{ fill:none; stroke:var(--line); stroke-width:1; }
+.loop__draw{ fill:none; stroke:var(--brand-lift); stroke-width:1.5;
+  stroke-linecap:round;
+  stroke-dasharray:var(--circ) var(--circ); stroke-dashoffset:var(--circ);
+  opacity:.75; }
+.loop.is-in .loop__draw{ transition:stroke-dashoffset 1.8s var(--ease) .1s;
+  stroke-dashoffset:0; }
+
+/* The travelling dot: a full-size wrapper spun about the centre, with the
+   dot parked at the top of it. Works everywhere; no offset-path needed. */
+.loop__orbit{ position:absolute; inset:0; opacity:0; }
+.loop.is-in .loop__orbit{ opacity:1; transition:opacity .6s var(--ease) 1.6s;
+  animation:loopSpin 14s linear 1.9s infinite; }
+@keyframes loopSpin{ to{ transform:rotate(360deg) } }
+.loop__orbit i{ position:absolute; left:50%; top:0; width:9px; height:9px;
+  margin-left:-4.5px; margin-top:-4.5px; border-radius:50%;
+  background:var(--brand-lift);
+  box-shadow:0 0 14px 3px color-mix(in srgb, var(--brand-lift) 55%, transparent); }
+
+.loop__core{ position:absolute; left:50%; top:50%; translate:-50% -50%;
+  width:46%; text-align:center; opacity:0; transform:scale(.94);
+  transition:opacity .7s var(--ease) 1.25s, transform .7s var(--ease) 1.25s; }
+.loop.is-in .loop__core{ opacity:1; transform:none; }
+.loop__core b{ display:block; font-size:clamp(15px,1.6vw,21px); font-weight:500;
+  letter-spacing:-.015em; line-height:1.25; color:var(--fg); }
+.loop__core b + b{ margin-top:12px; padding-top:12px;
+  border-top:1px solid color-mix(in srgb, var(--brand-lift) 30%, var(--line)); }
+/* Direct child only — the language spans inside each <b> must not pick this up. */
+.loop__core > span{ display:inline-block; margin-top:16px; padding:5px 12px;
+  border-radius:100px; background:color-mix(in srgb, var(--brand) 20%, transparent);
+  border:1px solid color-mix(in srgb, var(--brand-lift) 34%, transparent);
+  font-family:var(--font-mono); font-size:10px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--brand-lift); }
+
+.loop__node{ position:absolute; left:var(--x); top:var(--y);
+  translate:-50% -50%; width:23%; min-width:118px; padding:14px 8px;
+  text-align:center; border:1px solid var(--line); border-radius:var(--radius-lg);
+  background:var(--bg-2); opacity:0; transform:scale(.9);
+  transition:opacity .55s var(--ease), transform .55s var(--ease), border-color .25s var(--ease);
+  transition-delay:calc(.35s + var(--i) * .18s); }
+.loop.is-in .loop__node{ opacity:1; transform:none; }
+.loop__node--live{ border-color:color-mix(in srgb, var(--brand-lift) 50%, var(--line));
+  background:color-mix(in srgb, var(--brand) 14%, var(--bg-2)); }
+a.loop__node:hover{ border-color:var(--brand-lift); }
+.loop__code{ display:block; font-size:clamp(17px,1.7vw,22px); font-weight:500;
+  letter-spacing:.01em; }
+.loop__role{ display:block; margin-top:4px; font-size:12px; color:var(--muted); }
+.loop__wip{ display:inline-block; margin-top:8px; padding:2px 8px; border-radius:100px;
+  border:1px solid var(--line); font-family:var(--font-mono); font-size:9px;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--faint); }
+
+/* Stacked fallback — also what a reduced-motion or no-JS visitor gets. */
+.loop-list{ display:none; }
+@media (max-width:860px){
+  .loop{ display:none; }
+  .loop-list{ display:grid; gap:12px; }
+}
+@media (prefers-reduced-motion:reduce){
+  .loop__draw{ stroke-dashoffset:0; }
+  .loop__orbit{ opacity:1; animation:none; }
+  .loop__core,.loop__node{ opacity:1; transform:none; }
+}
+
 /* ---- 24. Pre-hydration guard -------------------------------------------- */
 header[data-hdr]{ position:fixed; inset:0 0 auto 0; z-index:100; height:68px; }
 footer[data-ftr]{ background:#08090B; min-height:200px; }

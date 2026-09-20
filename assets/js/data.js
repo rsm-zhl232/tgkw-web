@@ -474,3 +474,65 @@ TG.docs = {
              zh: "完整方案：岗课赛证四位一体育人模式、5+N 合作体系、面向教学的产品矩阵，以及已落地的院校合作成果。" }
   }
 };
+
+/* ---- Product line -------------------------------------------------------
+   The six-product ecosystem on products.html. Content is transcribed from
+   「05 产品体系」 in the 产教融合宣传册 (P11–P12) — product code, Chinese
+   product name, role in the loop and status. Do not rename a code here
+   without checking the brochure: the ring diagram is drawn from this list in
+   order, starting at the top and running clockwise, so reordering the array
+   reorders the diagram.
+
+   live: true  —— 已上线, drawn solid
+   live: false —— 研发中, drawn outlined
+------------------------------------------------------------------------- */
+TG.productLine = [
+  {
+    code: "DFC", zh: "天宫 · 启筑", live: true,
+    role:  { en: "Design engine",       zh: "设计引擎" },
+    kind:  { en: "Digital construction", zh: "数字建造工具" },
+    note:  { en: "One model, one source of data. Architecture, fit-out and MEP are designed in parallel, with quantities and pricing generated automatically, removing design defects at source.",
+             zh: "数据同源、一模到底，支持建筑、装饰、机电等多专业并行设计与量价自动生成，从源头上消除设计缺陷。" },
+    href: "dfc.html"
+  },
+  {
+    code: "QDC", zh: "天宫计元", live: false,
+    role:  { en: "Cost control",        zh: "成本管控" },
+    kind:  { en: "Dynamic cost platform", zh: "动态造价预算平台" },
+    note:  { en: "A model-driven cost platform that keeps modelling, quantity take-off and pricing on one source.",
+             zh: "基于正向模型驱动的动态造价预算平台，实现建模、算量、计价同源联动。" },
+    href: ""
+  },
+  {
+    code: "ODC", zh: "数字运营管理系统", live: false,
+    role:  { en: "Operations",          zh: "数字运维" },
+    kind:  { en: "Operations management", zh: "运营管理系统" },
+    note:  { en: "Takes over the as-built digital asset and carries building information into operation, completing the lifecycle.",
+             zh: "承接竣工数字资产，将建筑信息延伸至运营阶段，构建完整建筑全生命周期数字流转。" },
+    href: ""
+  },
+  {
+    code: "ADC", zh: "天宫 · 金翼", live: true,
+    role:  { en: "Project management",  zh: "项目管理" },
+    kind:  { en: "Project management",  zh: "项目管理工具" },
+    note:  { en: "Whole-lifecycle project control. Live data feeds back into TAI and DFC, driving the chain forward.",
+             zh: "全域管控项目全周期，实时数据反哺 TAI 与 DFC，驱动全链路智能进化。" },
+    href: ""
+  },
+  {
+    code: "PDC", zh: "项目数字化管理平台", live: false,
+    role:  { en: "Programme control",   zh: "数字化管控" },
+    kind:  { en: "Multi-client control", zh: "多端可视化管控" },
+    note:  { en: "Multi-client visual control for engineering projects, linked to ADC data, showing programme, resources and risk in real time.",
+             zh: "面向工程项目多端可视化管控模块，联动 ADC 协同数据，对进度、资源、风险进行实时可视化呈现。" },
+    href: ""
+  },
+  {
+    code: "TAI", zh: "天宫 · 神匠", live: true,
+    role:  { en: "AI engine",           zh: "AI 引擎" },
+    kind:  { en: "Intelligent design",  zh: "智能设计工具" },
+    note:  { en: "A forward-design AI that multiplies scheme design throughput and makes design quality standardised and reusable.",
+             zh: "AI 正向设计大脑让方案设计效率提升数倍，设计质量标准化、可复用。" },
+    href: "tai.html"
+  }
+];

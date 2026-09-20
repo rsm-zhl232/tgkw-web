@@ -23,6 +23,7 @@ about a minute later. Nothing else to run.
 
 ```
 index.html      首页                      Home
+products.html   产品体系（六产品闭环图）      Product system (six-product loop)
 dfc.html        DFC 平台（软件）           DFC platform (software)
 services.html   设计服务                   Design services — the revenue engine
 projects.html   项目索引（可筛选，数据驱动） Project index (filterable, data-driven)
@@ -226,6 +227,28 @@ out.save("assets/docs/xxx.pdf", deflate=True, garbage=4)
 ```
 
 ---
+
+## 产品体系与闭环图 · Product system
+
+`products.html` 的环形闭环由 `assets/js/data.js` 底部的 `TG.productLine` 渲染。
+**数组顺序就是圆周顺序**——第 0 项在正上方，其余顺时针排列，改顺序即改图。
+内容逐字录自产教融合宣传册「05 产品体系」（P11–P12），改产品代号前请先核对原册。
+注意是 **QDC**（天宫计元，成本管控），不是 DQC。
+
+The ring on `products.html` is rendered from `TG.productLine` at the bottom of
+`assets/js/data.js`. **Array order is ring order** — index 0 sits at the top and
+the rest run clockwise, so reordering the array reorders the diagram. The text
+is transcribed from 「05 产品体系」 in the education brochure (P11–P12); check it
+before renaming a product code. Note the code is **QDC**, not DQC.
+
+`live: true` 画成实心蓝底（已上线：DFC、TAI、ADC），`live: false` 画成描边加
+「研发中」标记（在研：QDC、PDC、ODC）。窄于 860px 时环形图隐藏，改用竖排卡片——
+那个宽度下标签会互相碰撞，几何关系也不再传达信息。
+
+`live: true` draws solid (shipping: DFC, TAI, ADC); `live: false` draws outlined
+with an "in development" marker (QDC, PDC, ODC). Below 860px the ring is replaced
+by a stacked list — at that width the labels collide and the geometry stops
+carrying meaning.
 
 ## 数字出处 · Where the numbers come from
 

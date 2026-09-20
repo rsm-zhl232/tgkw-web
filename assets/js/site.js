@@ -7,6 +7,7 @@
 window.TG = window.TG || {};
 
 TG.nav = [
+  { href: "products.html", en: "Products", zh: "产品体系" },
   { href: "dfc.html", en: "DFC Platform", zh: "DFC 平台" },
   { href: "services.html", en: "Services", zh: "设计服务" },
   { href: "projects.html", en: "Projects", zh: "项目案例" },
@@ -19,6 +20,7 @@ TG.footer = [
   {
     h: { en: "Platform", zh: "产品" },
     links: [
+      { href: "products.html", en: "Product system", zh: "产品体系" },
       { href: "dfc.html", en: "DFC overview", zh: "DFC 概览" },
       { href: "dfc.html#modules", en: "Modules", zh: "功能模块" },
       { href: "dfc.html#editions", en: "Editions & pricing", zh: "版本与价格" },
@@ -846,6 +848,111 @@ function buildDocViewer() {
   });
 }
 
+/* ---- Product loop -------------------------------------------------------- */
+/* Draws TG.productLine as a closed ring: item 0 sits at the top and the rest
+   run clockwise, so the array order IS the diagram order. The ring only
+   animates once, when it first scrolls into view — replaying it on every
+   scroll past would be noise. Below 860px the CSS hides the ring and shows
+   the stacked list this also renders. */
+function renderProductLoop() {
+  var host = document.querySelector("[data-loop]");
+  if (!host) return;
+  var items = TG.productLine || [];
+  if (!items.length) return;
+
+  var R = 37;            /* node centres, % of the box from the middle */
+  var nodes = items.map(function (p, i) {
+    var a = (i / items.length) * 2 * Math.PI - Math.PI / 2;
+    var x = (50 + R * Math.cos(a)).toFixed(2);
+    var y = (50 + R * Math.sin(a)).toFixed(2);
+    var tag = p.href ? "a" : "span";
+    var attr = p.href ? ' href="' + p.href + '"' : "";
+    return (
+      "<" + tag + attr + ' class="loop__node' + (p.live ? " loop__node--live" : "") +
+        '" style="--x:' + x + '%;--y:' + y + '%;--i:' + i + '">' +
+        '<b class="loop__code">' + TG.esc(p.code) + "</b>" +
+        '<span class="loop__role">' + TG.bi(p.role) + "</span>" +
+        (p.live ? "" :
+          '<span class="loop__wip"><span data-lang="en">In development</span>' +
+          '<span data-lang="zh">研发中</span></span>') +
+      "</" + tag + ">"
+    );
+  }).join("");
+
+  /* r=40 in a 0..100 viewBox leaves room for the 1.5px stroke to sit inside. */
+  var r = 40, circ = (2 * Math.PI * r).toFixed(2);
+  host.innerHTML =
+    '<div class="loop" data-loop-fig>' +
+      '<svg class="loop__ring" viewBox="0 0 100 100" aria-hidden="true" ' +
+        'style="--circ:' + circ + '">' +
+        '<circle class="loop__track" cx="50" cy="50" r="' + r + '"></circle>' +
+        /* rotated so the stroke starts drawing from the top, not from 3 o'clock */
+        '<circle class="loop__draw" cx="50" cy="50" r="' + r + '" ' +
+          'transform="rotate(-90 50 50)"></circle>' +
+      "</svg>" +
+      '<div class="loop__orbit" aria-hidden="true"><i></i></div>' +
+      '<div class="loop__core">' +
+        '<b><span data-lang="en">Design and cost, unified</span><span data-lang="zh">设计成本一体化</span></b>' +
+        '<b><span data-lang="en">Whole-project management</span><span data-lang="zh">全域项目管理</span></b>' +
+        '<span><span data-lang="en">Closed loop</span><span data-lang="zh">全流程闭环</span></span>' +
+      "</div>" +
+      nodes +
+    "</div>" +
+    '<ul class="loop-list">' + items.map(function (p) {
+      return '<li class="card' + (p.live ? "" : "") + '">' +
+        '<div class="card__ix">' + TG.esc(p.code) +
+          (p.live ? "" : ' · <span data-lang="en">In development</span><span data-lang="zh">研发中</span>') +
+        "</div>" +
+        '<h3 class="card__t">' + TG.bi(p.role) + "</h3>" +
+        '<p class="card__d">' + TG.bi(p.note) + "</p>" +
+      "</li>";
+    }).join("") + "</ul>";
+
+  var fig = host.querySelector("[data-loop-fig]");
+  if (!("IntersectionObserver" in window)) { fig.classList.add("is-in"); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      e.target.classList.add("is-in");
+      io.unobserve(e.target);          /* play once, not on every pass */
+    });
+  }, { threshold: 0.35 });
+  io.observe(fig);
+}
+
+/* ---- Product matrix ------------------------------------------------------ */
+function renderProductMatrix() {
+  var host = document.querySelector("[data-product-matrix]");
+  if (!host) return;
+  var items = TG.productLine || [];
+  function row(p) {
+    return '<div class="frow reveal" style="padding-block:clamp(26px,3vw,40px)">' +
+      "<div>" +
+        '<p class="mono accent">' + TG.esc(p.code) + "</p>" +
+        '<h3 class="h3 mt-s">' + TG.bi(p.zh ? { en: p.code + " " + p.zh, zh: p.code + " " + p.zh } : p.role) +
+          (p.live ? "" :
+            ' <span class="loop__wip" style="vertical-align:middle">' +
+            '<span data-lang="en">In development</span><span data-lang="zh">研发中</span></span>') +
+        "</h3>" +
+        '<p class="small" style="margin-top:6px;color:var(--faint)">' + TG.bi(p.kind) + "</p>" +
+      "</div>" +
+      '<p class="body">' + TG.bi(p.note) +
+        (p.href ? ' <a class="link" href="' + p.href + '">' +
+          '<span data-lang="en">More</span><span data-lang="zh">了解详情</span></a>' : "") +
+      "</p>" +
+    "</div>";
+  }
+  var live = items.filter(function (p) { return p.live; });
+  var wip  = items.filter(function (p) { return !p.live; });
+  host.innerHTML =
+    '<p class="eyebrow reveal"><span class="num">02</span>' +
+      '<span data-lang="en">Shipping today</span><span data-lang="zh">核心产品矩阵</span></p>' +
+    live.map(row).join("") +
+    '<p class="eyebrow reveal" style="margin-top:clamp(48px,6vw,80px)"><span class="num">03</span>' +
+      '<span data-lang="en">In development</span><span data-lang="zh">未来产品布局</span></p>' +
+    wip.map(row).join("");
+}
+
 /* ---- Client wall -------------------------------------------------------- */
 function renderClients() {
   var host = document.querySelector("[data-clients]");
@@ -876,6 +983,8 @@ document.addEventListener("DOMContentLoaded", function () {
   renderProjectDetail();
   renderTaiPairs();
   renderDocs();
+  renderProductLoop();
+  renderProductMatrix();
   initReveal();
   initHeroModel();
 });
