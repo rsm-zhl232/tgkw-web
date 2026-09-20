@@ -239,9 +239,15 @@ The figures on the site are from the company decks, not invented:
   85% fewer changes, 40–60% shorter programme, 10–15% lower cost, 75% less
   rework — Shenzhen Municipal Bureau of Public Works and THAD, Tsinghua
   University. The attribution line under the stat band must stay with them.
-- **238 人、27 个项目组、13 项发明专利、23 项软著、1000+ 标杆案例、投入过亿** —— 企业介绍 PPT。
-  238 people, 27 project squads, 13 patents, 23 software copyrights,
-  1000+ benchmark projects, >¥100m invested — company profile deck.
+- **300 人的实施落地团队** —— 2026-09-18 会议纪要明确口径，**取代**《企业介绍》PPT 里的
+  「集团 238 人／研发 72／项目部 152／27 个项目组」。那组旧数字已从全站移除，不要改回去。
+  300-strong delivery team — set by the 2026-09-18 meeting minutes, **superseding**
+  the "238 across the group / 72 in software / 152 in delivery / 27 squads" split
+  in the company profile deck. That older breakdown has been removed site-wide;
+  do not reinstate it.
+- **13 项发明专利、23 项软著、1000+ 标杆案例、投入过亿** —— 企业介绍 PPT。
+  13 patents, 23 software copyrights, 1000+ benchmark projects,
+  >¥100m invested — company profile deck.
 - **项目数字**（海南节省 2 亿、玥玺湾 1740 条冲突、东莞博物馆 874 条、肯德基与华住的周期）
   —— DFC 数字建造的项目应用 PPT。
   Project figures (Hainan ¥200m, Yuexiwan 1,740 conflicts, Dongguan Museum

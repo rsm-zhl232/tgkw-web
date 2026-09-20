@@ -601,6 +601,203 @@
         "assets/img/projects/changsha-nuoya-hotel-04.jpg",
         "assets/img/projects/changsha-nuoya-hotel-05.jpg"
       ]
+    },
+    "guangzhou-flour-mill": {
+      "slug": "blthq",
+      "name": "保利天河区临江大道北侧AT080722地块（南方面粉厂）项目",
+      "use_type": "商业",
+      "address": "广州市天河区",
+      "floor_area": "175561 ㎡",
+      "developer": "广东保利城市发展有限公司",
+      "fields": {
+        "项目名称": "保利天河区临江大道北侧AT080722地块（南方面粉厂）项目",
+        "项目地址": "广州市天河区",
+        "建筑面积": "175561 ㎡",
+        "建设单位": "广东保利城市发展有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/13.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/blthq/list.html",
+      "local_images": [
+        "assets/img/projects/guangzhou-flour-mill-01.jpg"
+      ]
+    },
+    "moutai-stores": {
+      "slug": "mtthree",
+      "name": "茅台第三代专卖店项目设计服务",
+      "use_type": "商业",
+      "address": "",
+      "floor_area": "",
+      "developer": "贵州茅台酒股份有限公司",
+      "fields": {
+        "项目名称": "茅台第三代专卖店项目设计服务",
+        "项目地址": "",
+        "建设单位": "贵州茅台酒股份有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/149.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/mtthree/list.html",
+      "local_images": [
+        "assets/img/projects/moutai-stores-01.jpg"
+      ]
+    },
+    "cr-vanguard": {
+      "slug": "hrwj",
+      "name": "华润万家工程设计服务项目",
+      "use_type": "商业",
+      "address": "",
+      "floor_area": "",
+      "developer": "华润万家有限公司",
+      "fields": {
+        "项目名称": "华润万家工程设计服务项目",
+        "项目地址": "",
+        "建设单位": "华润万家有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/60.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/hrwj/list.html",
+      "local_images": [
+        "assets/img/projects/cr-vanguard-01.jpg"
+      ]
+    },
+    "jiangmen-crowne-plaza": {
+      "slug": "crowne_plaza",
+      "name": "江门保利皇冠假日酒店",
+      "use_type": "酒店",
+      "address": "广东江门",
+      "floor_area": "109358.4 ㎡",
+      "developer": "江门保利宏信房地产开发有限公司",
+      "fields": {
+        "项目名称": "江门保利皇冠假日酒店",
+        "项目地址": "广东江门",
+        "建筑面积": "109358.4 ㎡",
+        "建设单位": "江门保利宏信房地产开发有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/16.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/078.jpg",
+        "https://data.tgku.com/data/project_case/2025-07-14/079.jpg",
+        "https://data.tgku.com/data/project_case/2025-07-14/080.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/081.jpg",
+        "https://data.tgku.com/data/project_case/2025-07-14/082-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/083-1.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/crowne_plaza/list.html",
+      "local_images": [
+        "assets/img/projects/jiangmen-crowne-plaza-01.jpg",
+        "assets/img/projects/jiangmen-crowne-plaza-02.jpg",
+        "assets/img/projects/jiangmen-crowne-plaza-03.jpg",
+        "assets/img/projects/jiangmen-crowne-plaza-04.jpg",
+        "assets/img/projects/jiangmen-crowne-plaza-05.jpg",
+        "assets/img/projects/jiangmen-crowne-plaza-06.jpg"
+      ]
+    },
+    "sanya-poly-tianjun": {
+      "slug": "sybl",
+      "name": "三亚保利天珺项目",
+      "use_type": "住宅",
+      "address": "海南省三亚市吉阳区",
+      "floor_area": "172930 ㎡",
+      "developer": "保利发展控股集团股份有限公司",
+      "fields": {
+        "项目名称": "三亚保利天珺项目",
+        "项目地址": "海南省三亚市吉阳区",
+        "建筑面积": "172930 ㎡",
+        "建设单位": "保利发展控股集团股份有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/189.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/sybl/list.html",
+      "local_images": [
+        "assets/img/projects/sanya-poly-tianjun-01.jpg"
+      ]
+    },
+    "guangzhou-poly-duhui": {
+      "slug": "hcdh",
+      "name": "广州市天河区保利华创都荟天珺项目",
+      "use_type": "商业",
+      "address": "广州市天河区",
+      "floor_area": "876.16 ㎡",
+      "developer": "广州穗皇置业有限公司",
+      "fields": {
+        "项目名称": "广州市天河区保利华创都荟天珺项目",
+        "项目地址": "广州市天河区",
+        "建筑面积": "876.16 ㎡",
+        "建设单位": "广州穗皇置业有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/38.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/hcdh/list.html",
+      "local_images": [
+        "assets/img/projects/guangzhou-poly-duhui-01.jpg"
+      ]
+    },
+    "foshan-poly-heyue": {
+      "slug": "riverside",
+      "name": "佛山保利和悦滨江",
+      "use_type": "住宅",
+      "address": "广东佛山",
+      "floor_area": "32000 ㎡",
+      "developer": "佛山市正弘置业有限公司",
+      "fields": {
+        "项目名称": "佛山保利和悦滨江",
+        "项目地址": "广东佛山",
+        "建筑面积": "32000 ㎡",
+        "建设单位": "佛山市正弘置业有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/020.jpg",
+        "https://data.tgku.com/data/project_case/2025-07-14/021.jpg",
+        "https://data.tgku.com/data/project_case/2025-07-14/022.jpg",
+        "https://data.tgku.com/data/project_case/2025-07-14/023.jpg",
+        "https://data.tgku.com/data/project_case/2025-07-14/024.jpg",
+        "https://data.tgku.com/data/project_case/2025-07-14/025.jpg"
+      ],
+      "source": "https://www.tgkw.com/project/cases/riverside/list.html",
+      "local_images": [
+        "assets/img/projects/foshan-poly-heyue-01.jpg",
+        "assets/img/projects/foshan-poly-heyue-02.jpg",
+        "assets/img/projects/foshan-poly-heyue-03.jpg",
+        "assets/img/projects/foshan-poly-heyue-04.jpg",
+        "assets/img/projects/foshan-poly-heyue-05.jpg",
+        "assets/img/projects/foshan-poly-heyue-06.jpg"
+      ]
+    },
+    "jiangmen-poly-plaza": {
+      "slug": "jiangmen",
+      "name": "江门保利国际广场",
+      "use_type": "商业",
+      "address": "广东江门",
+      "floor_area": "109904.4 ㎡",
+      "developer": "江门保利宏信房地产开发有限公司",
+      "fields": {
+        "项目名称": "江门保利国际广场",
+        "项目地址": "广东江门",
+        "建筑面积": "109904.4 ㎡",
+        "建设单位": "江门保利宏信房地产开发有限公司"
+      },
+      "images": [
+        "https://data.tgku.com/data/project_case/2025-07-14/066-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/067-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/068-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/069-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/070-1.png",
+        "https://data.tgku.com/data/project_case/2025-07-14/071-1.png"
+      ],
+      "source": "https://www.tgkw.com/project/cases/jiangmen/list.html",
+      "local_images": [
+        "assets/img/projects/jiangmen-poly-plaza-01.jpg",
+        "assets/img/projects/jiangmen-poly-plaza-02.jpg",
+        "assets/img/projects/jiangmen-poly-plaza-03.jpg",
+        "assets/img/projects/jiangmen-poly-plaza-04.jpg",
+        "assets/img/projects/jiangmen-poly-plaza-05.jpg",
+        "assets/img/projects/jiangmen-poly-plaza-06.jpg"
+      ]
     }
   }
 }

@@ -53,15 +53,31 @@ DELAY = 0.4             # seconds between requests — be polite to the server
 # Run without arguments to print the full list of available slugs.
 # ---------------------------------------------------------------------------
 PROJECTS = {
-    "tencent-hq":         "tengxun",
-    "zte-supercampus":    "zxtx",
-    "poly-grand-theatre": "djy",
-    "dongguan-museum":    "museum",
+    # 办公 / 总部 · workplace & HQ
+    "tencent-hq":          "tengxun",
+    "zte-supercampus":     "zxtx",
+    # 公建 / 文化 · civic & cultural
+    "poly-grand-theatre":  "djy",
+    "dongguan-museum":     "museum",
+    # 医疗 · healthcare
     "puh3-medical-centre": "bjthreeyy",
-    "maoming-olympic":    "maoming_olympic_sports_center",
-    "heytea-spaces":      "liketea",
-    "yum-china":          "kfc",
+    # 体育 · sports
+    "maoming-olympic":     "maoming_olympic_sports_center",
+    # 连锁 · chain rollouts
+    "heytea-spaces":       "liketea",
+    "yum-china":           "kfc",
+    "moutai-stores":       "mtthree",
+    "cr-vanguard":         "hrwj",
+    # 酒店 · hospitality
     "changsha-nuoya-hotel": "scny",
+    "jiangmen-crowne-plaza": "crowne_plaza",
+    # 地产 / 住宅 · developer & residential
+    "guangzhou-flour-mill": "blthq",
+    "sanya-poly-tianjun":   "sybl",
+    "guangzhou-poly-duhui": "hcdh",
+    "foshan-poly-heyue":    "riverside",
+    # 商业 · retail
+    "jiangmen-poly-plaza":  "jiangmen",
 }
 
 

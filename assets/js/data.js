@@ -31,6 +31,8 @@ window.TG = window.TG || {};
 /* Project categories — the `id` is what a project's `cat` refers to. */
 TG.categories = [
   { id: "civic",       en: "Civic & Cultural",   zh: "政府公建" },
+    { id: "chain",      en: "Chain rollouts",  zh: "连锁复制" },
+  { id: "developer",  en: "Developer",       zh: "地产开发" },
   { id: "residential", en: "Residential",        zh: "住宅" },
   { id: "office",      en: "Workplace",          zh: "办公" },
   { id: "retail",      en: "Retail & Commercial",zh: "商业" },
@@ -186,7 +188,7 @@ TG.projects = [
   },
   {
     id: "heytea-spaces",
-    cat: "retail",
+    cat: "chain",
     featured: false,
     source: "https://www.tgkw.com/project/cases/liketea/list.html",
     thumb: "assets/img/projects/heytea-spaces-01.jpg",
@@ -204,7 +206,7 @@ TG.projects = [
   },
   {
     id: "yum-china",
-    cat: "retail",
+    cat: "chain",
     featured: false,
     source: "https://www.tgkw.com/project/cases/kfc/list.html",
     thumb: "assets/img/projects/yum-china-01.jpg",
@@ -244,6 +246,108 @@ TG.projects = [
     scope:  { en: "Interior BIM", zh: "装饰BIM" },
     summary:{ en: "23,345 ㎡ hotel in Changsha — public areas and guest floors, with point-cloud survey checked against the model.",
               zh: "长沙诺雅酒店，建筑面积 23,345 ㎡，公区与客房层设计，并以点云扫描与模型进行复核。" }
+  },
+  /* ── 以下 8 个为 2026-09-18 会议纪要要求补充的地产、酒店、连锁案例 ────────
+     照片与 title/client/area 由 tools/scrape-tgkw-cases.py 从 tgkw.com 抓取，
+     是真实数据。summary 和 scope 是占位，需要业务同事补写：
+       scope   —— 我们具体承接了什么（嵌套/正向/现场深化/施工管理、哪些专业）
+       summary —— 一两句项目介绍，出现在卡片和详情页
+     en 字段留空时页面会回落到中文，填好再上线英文版。
+     ──────────────────────────────────────────────────────────────── */
+  {
+    id: "guangzhou-flour-mill",
+    cat: "developer", featured: true,
+    thumb: "assets/img/projects/guangzhou-flour-mill-01.jpg",
+    gallery: ["assets/img/projects/guangzhou-flour-mill-01.jpg"],
+    title:  { en: "Guangzhou Flour Mill regeneration", zh: "广州南方面粉厂改造（玥玺湾）" },
+    client: { en: "Poly Urban Development (Guangdong)", zh: "广东保利城市发展有限公司" },
+    year: "2024", area: "175,561 ㎡",
+    scope:  { en: "", zh: "" },          // TODO 承接范围
+    summary:{ en: "", zh: "" }           // TODO 项目介绍
+  },
+  {
+    id: "sanya-poly-tianjun",
+    cat: "residential", featured: false,
+    thumb: "assets/img/projects/sanya-poly-tianjun-01.jpg",
+    gallery: ["assets/img/projects/sanya-poly-tianjun-01.jpg"],
+    title:  { en: "Sanya Poly Tianjun", zh: "三亚保利天珺项目" },
+    client: { en: "Poly Developments and Holdings", zh: "保利发展控股集团股份有限公司" },
+    year: "", area: "172,930 ㎡",
+    scope:  { en: "", zh: "" },
+    summary:{ en: "", zh: "" }
+  },
+  {
+    id: "foshan-poly-heyue",
+    cat: "residential", featured: false,
+    thumb: "assets/img/projects/foshan-poly-heyue-01.jpg",
+    gallery: ["assets/img/projects/foshan-poly-heyue-01.jpg",
+              "assets/img/projects/foshan-poly-heyue-02.jpg",
+              "assets/img/projects/foshan-poly-heyue-03.jpg"],
+    title:  { en: "Foshan Poly Heyue Riverside", zh: "佛山保利和悦滨江" },
+    client: { en: "Foshan Zhenghong Properties", zh: "佛山市正弘置业有限公司" },
+    year: "", area: "32,000 ㎡",
+    scope:  { en: "", zh: "" },
+    summary:{ en: "", zh: "" }
+  },
+  {
+    id: "guangzhou-poly-duhui",
+    cat: "developer", featured: false,
+    thumb: "assets/img/projects/guangzhou-poly-duhui-01.jpg",
+    gallery: ["assets/img/projects/guangzhou-poly-duhui-01.jpg"],
+    title:  { en: "Poly Huachuang Duhui Tianjun, Tianhe", zh: "广州天河保利华创都荟天珺" },
+    client: { en: "Guangzhou Suihuang Properties", zh: "广州穗皇置业有限公司" },
+    year: "", area: "876 ㎡",
+    scope:  { en: "", zh: "" },
+    summary:{ en: "", zh: "" }
+  },
+  {
+    id: "jiangmen-crowne-plaza",
+    cat: "hospitality", featured: true,
+    thumb: "assets/img/projects/jiangmen-crowne-plaza-02.jpg",
+    gallery: ["assets/img/projects/jiangmen-crowne-plaza-01.jpg",
+              "assets/img/projects/jiangmen-crowne-plaza-02.jpg",
+              "assets/img/projects/jiangmen-crowne-plaza-03.jpg",
+              "assets/img/projects/jiangmen-crowne-plaza-04.jpg"],
+    title:  { en: "Crowne Plaza Jiangmen", zh: "江门保利皇冠假日酒店" },
+    client: { en: "Jiangmen Poly Hongxin Real Estate", zh: "江门保利宏信房地产开发有限公司" },
+    year: "2021", area: "109,358 ㎡",
+    scope:  { en: "", zh: "" },
+    summary:{ en: "", zh: "" }
+  },
+  {
+    id: "jiangmen-poly-plaza",
+    cat: "retail", featured: false,
+    thumb: "assets/img/projects/jiangmen-poly-plaza-02.jpg",
+    gallery: ["assets/img/projects/jiangmen-poly-plaza-01.jpg",
+              "assets/img/projects/jiangmen-poly-plaza-02.jpg",
+              "assets/img/projects/jiangmen-poly-plaza-03.jpg"],
+    title:  { en: "Poly International Plaza, Jiangmen", zh: "江门保利国际广场" },
+    client: { en: "Jiangmen Poly Hongxin Real Estate", zh: "江门保利宏信房地产开发有限公司" },
+    year: "2021", area: "109,904 ㎡",
+    scope:  { en: "", zh: "" },
+    summary:{ en: "", zh: "" }
+  },
+  {
+    id: "moutai-stores",
+    cat: "chain", featured: false,
+    thumb: "assets/img/projects/moutai-stores-01.jpg",
+    gallery: ["assets/img/projects/moutai-stores-01.jpg"],
+    title:  { en: "Moutai third-generation stores", zh: "茅台第三代专卖店" },
+    client: { en: "Kweichow Moutai", zh: "贵州茅台酒股份有限公司" },
+    year: "2022", area: "",
+    scope:  { en: "", zh: "" },
+    summary:{ en: "", zh: "" }
+  },
+  {
+    id: "cr-vanguard",
+    cat: "chain", featured: false,
+    thumb: "assets/img/projects/cr-vanguard-01.jpg",
+    gallery: ["assets/img/projects/cr-vanguard-01.jpg"],
+    title:  { en: "CR Vanguard engineering design", zh: "华润万家工程设计服务" },
+    client: { en: "China Resources Vanguard", zh: "华润万家有限公司" },
+    year: "2022", area: "",
+    scope:  { en: "", zh: "" },
+    summary:{ en: "", zh: "" }
   }
 ];
 
