@@ -1,19 +1,16 @@
-# ── Source material, not part of the website ─────────────────────────────
-# The decks and original brochures these pages were written from. They are
-# too big for git — the company profile deck alone is 274 MB, past GitHub's
-# 100 MB hard limit — and nothing on the site loads them. Keep them in the
-# company drive; the figures they back up are listed in README.md under
-# "Where the numbers come from".
-*.pptx
-/0902-天宫开物产教融合宣传册.pdf
-/20260707-DFC数字建造的项目应用.pdf
-/TAI+DFC工作流｜数字化设计系统(1).pdf
-
-# TAI before/after originals, ~56 MB of full-size PNG/JPG. The site serves
-# only the optimised copies in pairs/, which ARE tracked. README.md has the
-# script that regenerates them if an example needs swapping.
-assets/img/tai/*
-!assets/img/tai/pairs/
+# ── 原始素材 · Source material ─────────────────────────────────────────────
+# 规则只有一条：_source/ 里的东西不上传，其余全部上传。
+# One rule: nothing in _source/ is pushed; everything else is.
+#
+# _source/ 里是写网站用的原料，不是网站本身：PPT 与宣传册原件（企业介绍那份
+# 274 MB，超过 GitHub 100 MB 单文件硬限）、logo 源文件、TAI 对比图原图。
+# 网站运行不加载其中任何一个。新素材直接丢进 _source/ 即可，不用再改这个文件。
+#
+# It holds the raw material the site was built from — decks, original
+# brochures (one is 274 MB, past GitHub's 100 MB limit), logo source files,
+# full-size TAI images. The site loads none of it. Drop new material into
+# _source/ and this file never needs editing again.
+/_source/
 
 # macOS
 .DS_Store

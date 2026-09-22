@@ -57,33 +57,41 @@ tools/scrape-tgkw-cases.py   从 tgkw.com 抓项目资料和照片
                              Pulls project facts + photos from tgkw.com.
 tools/tgkw-cases.json        上次抓取的结果，含全部 61 个在线案例
                              What it last pulled, incl. all 61 live cases.
+
+_source/              原始素材，不上传（见下一节）
+                      Raw material, not pushed (see next section)
 ```
 
 ---
 
-## 没有进仓库的素材 · Source material that is not tracked
+## 原始素材 · `_source/` (not pushed)
 
-写这些页面所依据的 PPT 和宣传册原件**不在仓库里**，见 `.gitignore`：
+**规则只有一条：`_source/` 里的不上传，其余全部上传。** 新素材直接放进去，不用改 `.gitignore`。
 
-The decks and original brochures these pages were written from are **not in
-this repository** — see `.gitignore`:
+**One rule: nothing in `_source/` is pushed; everything else is.** Drop new
+material in there and `.gitignore` never needs editing.
 
 ```
-天宫开物企业介绍.pptx                            274 MB   ← 超过 GitHub 100 MB 单文件硬限
-天宫开物：建筑数字化转型与产教融合汇报方案.pptx     94 MB
-20260707-DFC数字建造的项目应用.pdf                25 MB
-0902-天宫开物产教融合宣传册.pdf                   22 MB
-TAI+DFC工作流｜数字化设计系统(1).pdf              3.7 MB
-assets/img/tai/ 下 41 张前后对比原图              53 MB   ← 网页只用 pairs/ 里的优化版
+_source/
+├── decks/            PPT 与宣传册原件 · decks and original brochures     419 MB
+│   ├── 天宫开物企业介绍.pptx                      274 MB  ← 超过 GitHub 100 MB 硬限
+│   ├── 天宫开物：建筑数字化转型与产教融合汇报方案.pptx  94 MB
+│   ├── 20260707-DFC数字建造的项目应用.pdf           25 MB
+│   ├── 0902-天宫开物产教融合宣传册.pdf              22 MB
+│   └── TAI+DFC工作流｜数字化设计系统(1).pdf          3.7 MB
+├── brand/            logo 源文件 · logo source files (.ai)
+├── tai-originals/    TAI 前后对比原图 40 张 · 40 full-size before/after images   52 MB
+└── misc/             其他（网页截图、旧模板图片）· screenshots, retired template images
 ```
 
-它们体积太大（企业介绍那份 274 MB，超过 GitHub 100 MB 的单文件硬限），而且网站运行完全不需要。
-请从公司网盘取用——它们支撑的数字列在下面「数字出处」一节。
+这些是写网站用的原料，不是网站本身——网站运行不加载其中任何一个。
+**它们只存在于本地，克隆仓库拿不到**，请在公司网盘保留一份。
+网站上的数字出自哪份资料，见下面「数字出处」一节。
 
-They are too big for git — the company profile deck alone is 274 MB, past
-GitHub's 100 MB hard limit — and the site does not load any of them. Get them
-from the company drive; the figures they back up are listed under
-"数字出处 · Where the numbers come from" below.
+These are the raw material the site was built from, not the site — nothing on
+it loads them. **They exist only locally; a clone of this repo will not have
+them**, so keep a copy on the company drive. For which figure came from which
+deck, see "数字出处 · Where the numbers come from" below.
 
 ---
 
@@ -176,9 +184,9 @@ over those names — nothing in `data.js` changes. To add one, drop in a new
   **Same aspect ratio for both halves**, or the picture jumps on the flip. The
   card box is 16:10 and the images are `object-fit: contain`, so plans and
   diagrams keep their legends and scale bars instead of being cropped.
-- **单张控制在 350 KB 以内。** 原图在公司网盘（不在仓库里），网页版是缩到 1600px 宽、质量 80。
-  **Keep them under ~350 KB.** Originals are on the company drive (not in this
-  repo); the web copies are resized to 1600px wide, quality 80.
+- **单张控制在 350 KB 以内。** 原图在 `_source/tai-originals/`（不上传），网页版是缩到 1600px 宽、质量 80。
+  **Keep them under ~350 KB.** Originals are in `_source/tai-originals/` (not
+  pushed); the web copies are resized to 1600px wide, quality 80.
 
 ---
 
