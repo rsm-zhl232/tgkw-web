@@ -113,8 +113,8 @@ TG.bi = function (pair) {
   if (typeof pair === "string") return TG.esc(pair);
   return (
     '<span data-lang="en">' +
-    TG.esc(pair.en || "") +
-    "</span>" +
+    TG.esc(pair.en || "“) +
+    ”</span>" +
     '<span data-lang="zh">' +
     TG.esc(pair.zh || pair.en || "") +
     "</span>"
@@ -231,7 +231,12 @@ function renderFooter() {
     '<div class="qr">' +
       '<figure><img src="assets/img/social/wechat-qr.png" alt="" loading="lazy" decoding="async">' +
         '<figcaption><span data-lang="en">WeChat</span><span data-lang="zh">公众号</span><br>天宫DFC</figcaption></figure>' +
-      '<figure><img src="assets/img/social/douyin-qr.png" alt="" loading="lazy" decoding="async">' +
+      /* Douyin's code is its own circular format, which a generic scanner will
+         not read — the link is the reliable way in on desktop. WeChat's code
+         decodes to a weixin.qq.com URL that only opens inside WeChat, so that
+         one is deliberately left unlinked. */
+      '<figure><a href="https://v.douyin.com/OcYdpY-vf7U/" target="_blank" rel="noopener">' +
+        '<img src="assets/img/social/douyin-qr.png" alt="" loading="lazy" decoding="async"></a>' +
         '<figcaption><span data-lang="en">Douyin</span><span data-lang="zh">抖音号</span><br>DFCBIM</figcaption></figure>' +
     '</div>' +
     "</div>" +

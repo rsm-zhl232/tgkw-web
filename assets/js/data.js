@@ -68,7 +68,7 @@ TG.projects = [
     area:    "56,000 ㎡",
     year: "2023",
     scope:  { en: "Interior BIM · Coordination · Shop drawings", zh: "装饰BIM · 协同 · 施工图" },
-    summary:{ en: "Workplace fit-out for Tencent in Shenzhen, 56,000 ㎡ gross floor area, modelled and documented in one DFC model.",
+    summary:{ en: "Workplace fit-out for Tencent in Shenzhen, 56,000 ㎡ gross floor area, modeled and documented in one DFC model.",
               zh: "腾讯深圳总部办公空间，建筑面积 56,000 ㎡，在同一个 DFC 模型中完成建模与出图。" }
   },
   {
@@ -114,7 +114,7 @@ TG.projects = [
     area:    "45,000 ㎡",
     year: "2024",
     scope:  { en: "Full-process BIM", zh: "全过程BIM" },
-    summary:{ en: "45,000 ㎡ grand theatre in Nanchang — a faceted envelope and a performance hall carried from design through to construction documentation.",
+    summary:{ en: "45,000 ㎡ grand theater in Nanchang — a faceted envelope and a performance hall carried from design through to construction documentation.",
               zh: "南昌 45,000 ㎡ 大剧院项目，异形表皮与观演空间从设计一路贯通至施工图交付。" }
   },
   {
@@ -154,13 +154,13 @@ TG.projects = [
       "assets/img/projects/puh3-medical-centre-05.jpg",
       "assets/img/projects/puh3-medical-centre-06.jpg"
     ],
-    title:   { en: "Peking University Third Hospital — National Regional Medical Centre", zh: "北京大学第三医院国家区域医疗中心项目" },
+    title:   { en: "Peking University Third Hospital — National Regional Medical Center", zh: "北京大学第三医院国家区域医疗中心项目" },
     client:  { en: "Peking University Third Hospital", zh: "北京大学第三医院" },
     location:{ en: "Zhangjiakou, Hebei", zh: "河北省张家口市" },
     area:    "137,446.44 ㎡",
     year: "2023",
     scope:  { en: "MEP + interior BIM", zh: "机电 + 装饰BIM" },
-    summary:{ en: "137,446 ㎡ national regional medical centre in Zhangjiakou — the largest model in this set, with MEP and interior coordinated together.",
+    summary:{ en: "137,446 ㎡ national regional medical center in Zhangjiakou — the largest model in this set, with MEP and interior coordinated together.",
               zh: "张家口国家区域医疗中心，建筑面积 137,446.44 ㎡，本组项目中体量最大，机电与装饰同步协同。" }
   },
   {
@@ -177,13 +177,13 @@ TG.projects = [
       "assets/img/projects/maoming-olympic-05.jpg",
       "assets/img/projects/maoming-olympic-06.jpg"
     ],
-    title:   { en: "Maoming Olympic Sports Centre", zh: "茂名市奥林匹克体育中心项目" },
+    title:   { en: "Maoming Olympic Sports Center", zh: "茂名市奥林匹克体育中心项目" },
     client:  { en: "Poly South China", zh: "华南保利集团" },
     location:{ en: "Maoming, Guangdong", zh: "广东茂名" },
     area:    "193,393 ㎡",
     year: "2022",
     scope:  { en: "Structural + MEP BIM", zh: "结构 + 机电BIM" },
-    summary:{ en: "193,393 ㎡ Olympic sports centre — long-span roof steelwork and stadium services modelled for fabrication and installation.",
+    summary:{ en: "193,393 ㎡ Olympic sports center — long-span roof steelwork and stadium services modeled for fabrication and installation.",
               zh: "茂名奥林匹克体育中心，建筑面积 193,393 ㎡，大跨度屋面钢结构与场馆机电按加工与安装深度建模。" }
   },
   {
@@ -222,7 +222,7 @@ TG.projects = [
     area:    "",
     year: "2022",
     scope:  { en: "Family library + automation", zh: "族库及智能化开发" },
-    summary:{ en: "Digital construction standard for Yum China's store programme — component library plus automation so a store set is generated, not redrawn.",
+    summary:{ en: "Digital construction standard for Yum China's store rollout — component library plus automation so a store set is generated, not redrawn.",
               zh: "百胜中国营建 BIM 数字化标准：族库结合智能化开发，门店图纸由模型生成而非重复绘制。" }
   },
   {
@@ -424,8 +424,8 @@ TG.taiPairs = [
     slug: "masterplan-colour",
     cat:   { en: "Landscape",    zh: "园林景观" },
     in:    { en: "Massing plan", zh: "白模总平" },
-    out:   { en: "Coloured master plan", zh: "彩色总平面" },
-    note:  { en: "Buildings, water, paving and planting coloured by layer. The road network and building footprints do not move.",
+    out:   { en: "Colored master plan", zh: "彩色总平面" },
+    note:  { en: "Buildings, water, paving and planting colored by layer. The road network and building footprints do not move.",
              zh: "建筑、水体、铺装与绿化分层上色，路网与建筑轮廓一点不动。" }
   },
   {
@@ -470,7 +470,7 @@ TG.docs = {
     kind: { en: "PDF · 24 pages", zh: "PDF · 24 页" },
     title: { en: "Industry–education integration brochure",
              zh: "数字建造产教融合宣传册" },
-    note:  { en: "The full programme: the four-way “post, course, contest, certificate” model, the 5+N cooperation menu, the product stack for teaching, and what we have built with partner colleges.",
+    note:  { en: "The full program: the four-part “post, course, contest, certificate” model, the 5+N cooperation menu, the product stack for teaching, and what we have built with partner colleges.",
              zh: "完整方案：岗课赛证四位一体育人模式、5+N 合作体系、面向教学的产品矩阵，以及已落地的院校合作成果。" }
   }
 };
@@ -499,7 +499,7 @@ TG.productLine = [
     code: "QDC", zh: "天宫计元", live: false,
     role:  { en: "Cost control",        zh: "成本管控" },
     kind:  { en: "Dynamic cost platform", zh: "动态造价预算平台" },
-    note:  { en: "A model-driven cost platform that keeps modelling, quantity take-off and pricing on one source.",
+    note:  { en: "A model-driven cost platform that keeps modeling, quantity takeoff and pricing on one source.",
              zh: "基于正向模型驱动的动态造价预算平台，实现建模、算量、计价同源联动。" },
     href: ""
   },
@@ -521,9 +521,9 @@ TG.productLine = [
   },
   {
     code: "PDC", zh: "项目数字化管理平台", live: false,
-    role:  { en: "Programme control",   zh: "数字化管控" },
+    role:  { en: "Schedule control",   zh: "数字化管控" },
     kind:  { en: "Multi-client control", zh: "多端可视化管控" },
-    note:  { en: "Multi-client visual control for engineering projects, linked to ADC data, showing programme, resources and risk in real time.",
+    note:  { en: "Multi-client visual control for engineering projects, linked to ADC data, showing schedule, resources, and risk in real time.",
              zh: "面向工程项目多端可视化管控模块，联动 ADC 协同数据，对进度、资源、风险进行实时可视化呈现。" },
     href: ""
   },
@@ -531,7 +531,7 @@ TG.productLine = [
     code: "TAI", zh: "天宫 · 神匠", live: true,
     role:  { en: "AI engine",           zh: "AI 引擎" },
     kind:  { en: "Intelligent design",  zh: "智能设计工具" },
-    note:  { en: "A forward-design AI that multiplies scheme design throughput and makes design quality standardised and reusable.",
+    note:  { en: "A forward-design AI that multiplies scheme design throughput and makes design quality standardized and reusable.",
              zh: "AI 正向设计大脑让方案设计效率提升数倍，设计质量标准化、可复用。" },
     href: "tai.html"
   }
