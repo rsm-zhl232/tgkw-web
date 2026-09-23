@@ -41,9 +41,14 @@ assets/js/data.js     >>> 内容都在这里 <<< 项目、分类、客户、TAI 
                       TAI pairs, brochures
 assets/js/site.js     页头、页脚、导航、语言、动效、渲染逻辑
                       Header, footer, nav, language, motion, rendering
-assets/img/           Logo 与图片。hero-axon.svg 是首页那个会动的模型，动效是文件内部的 CSS。
-                      Logos and images. hero-axon.svg is the animated home-page
-                      model — motion is CSS inside the file itself.
+assets/img/           Logo 与图片。tgkw-logo.svg 是公司标志（矢量，页头页脚与 favicon 共用，
+                      源文件在 _source/brand/）；favicon-180/512.png 是不支持 SVG favicon
+                      的浏览器兜底；hero-axon.svg 是首页那个会动的模型，动效是文件内部的 CSS。
+                      Logos and images. tgkw-logo.svg is the company mark (vector; header,
+                      footer and favicon all use it — source file in _source/brand/).
+                      favicon-180/512.png are fallbacks for browsers without SVG favicon
+                      support. hero-axon.svg is the animated home-page model — its motion
+                      is CSS inside the file itself.
 assets/img/projects/  项目照片，按 <project id>-01.jpg、-02.jpg … 命名
                       Project photos, named <project id>-01.jpg, -02.jpg …
 assets/img/tai/pairs/ TAI 前后对比图（网页实际加载的优化版）

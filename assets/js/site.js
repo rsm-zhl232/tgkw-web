@@ -153,7 +153,7 @@ function renderHeader() {
   host.innerHTML =
     '<div class="wrap hdr__in">' +
     '<a class="brand" href="index.html">' +
-    '<img src="assets/img/tgkw_logo.png" alt="Tiangong Kaiwu">' +
+    '<img src="assets/img/tgkw-logo.svg" alt="Tiangong Kaiwu" width="28" height="26">' +
     '<span class="brand__txt">TIANGONG KAIWU<small>Digital Construction</small></span>' +
     "</a>" +
     '<button class="burger" aria-expanded="false" aria-controls="tg-nav" aria-label="Menu"><span></span></button>' +
@@ -215,7 +215,7 @@ function renderFooter() {
     '<div class="ftr__top">' +
     "<div>" +
     '<a class="brand" href="index.html" style="margin-bottom:20px">' +
-    '<img src="assets/img/tgkw_logo.png" alt="Tiangong Kaiwu">' +
+    '<img src="assets/img/tgkw-logo.svg" alt="Tiangong Kaiwu" width="28" height="26">' +
     '<span class="brand__txt">TIANGONG KAIWU<small>Digital Construction</small></span></a>' +
     '<p class="small" style="max-width:34ch">' +
     '<span data-lang="en">Digital construction software and design delivery, from Shenzhen to projects worldwide.</span>' +
