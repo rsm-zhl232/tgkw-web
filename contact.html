@@ -8,6 +8,15 @@
 <link rel="icon" href="assets/img/tgkw-logo.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon-180.png" sizes="180x180">
 <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<script>
+/* Decide the language before first paint, so a Chinese visitor never sees a
+   flash of English. assets/js/site.js repeats this logic (TG.pickLang /
+   TG.applyLang) — if you change one, change the other. */
+(function(){try{var q=new URLSearchParams(location.search).get("lang"),
+s=localStorage.getItem("tg-lang"),n=(navigator.language||"en").toLowerCase(),
+l=(q==="zh"||q==="en")?q:(s||(n.indexOf("zh")===0?"zh":"en")),d=document.documentElement;
+d.setAttribute("data-lang",l);d.setAttribute("lang",l==="zh"?"zh-CN":"en");}catch(e){}})();
+</script>
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>

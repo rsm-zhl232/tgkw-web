@@ -373,8 +373,17 @@ Every visible string carries both languages side by side:
 <span data-lang="en">Design services</span><span data-lang="zh">设计服务</span>
 ```
 
-CSS 会隐藏掉当前未启用的那一种。页头的 EN/中文 开关设置 `<html data-lang="…">` 并记住选择。
-默认英文，浏览器语言是中文时默认中文。没有词典文件要维护——两种语言就挨着写。
+CSS 会隐藏掉当前未启用的那一种。**语言按这个优先级自动决定**：
+URL 的 `?lang=zh` / `?lang=en` → 访客上次手动选择（存在 localStorage）→
+浏览器/设备系统语言（`zh` 开头即中文，含 zh-CN / zh-TW / zh-HK）→ 英文兜底。
+没有词典文件要维护——两种语言就挨着写。
+
+判定逻辑存在**两处**，必须同步修改：`assets/js/site.js` 里的 `TG.pickLang()` /
+`TG.applyLang()`，以及每个 HTML `<head>` 里的那段内联脚本。内联那份负责在首屏
+绘制之前定好语言——`site.js` 在 `</body>` 末尾加载，没有它中文访客会先闪一下英文。
+
+`applyLang` 同时设置 `data-lang`（驱动 CSS 显隐）和 `lang` 属性（`zh-CN` / `en`，
+供屏幕阅读器、搜索引擎和浏览器的翻译提示读取），两者必须一起变。
 
 CSS hides whichever one is not active. The EN/中文 switch in the header sets
 `<html data-lang="…">` and remembers the choice. Default is English unless the

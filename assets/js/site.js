@@ -73,23 +73,40 @@ TG.footer = [
   },
 ];
 
-/* ---- Language ----------------------------------------------------------- */
-(function () {
+/* ---- Language -----------------------------------------------------------
+   Order of precedence: ?lang= in the URL, then whatever the visitor last
+   chose, then the browser/OS language, then English.
+
+   Each page also runs this in an inline <head> script so the choice is made
+   before first paint — this file loads at the end of <body>, and without that
+   head script a Chinese visitor sees a flash of English first. The two must
+   stay in step; change one, change the other.
+   ------------------------------------------------------------------------ */
+TG.pickLang = function () {
   var saved = null;
   try {
     saved = localStorage.getItem("tg-lang");
   } catch (e) {}
   var q = new URLSearchParams(location.search).get("lang");
   var nav = (navigator.language || "en").toLowerCase();
-  var lang =
-    q === "zh" || q === "en"
-      ? q
-      : saved || (nav.indexOf("zh") === 0 ? "zh" : "en");
-  document.documentElement.setAttribute("data-lang", lang);
-})();
+  return q === "zh" || q === "en"
+    ? q
+    : saved || (nav.indexOf("zh") === 0 ? "zh" : "en");
+};
+
+/* data-lang drives the CSS that shows one language and hides the other;
+   the lang attribute is what screen readers, search engines and the
+   browser's own translate prompt read, so both have to move together. */
+TG.applyLang = function (lang) {
+  var d = document.documentElement;
+  d.setAttribute("data-lang", lang);
+  d.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
+};
+
+TG.applyLang(TG.pickLang());
 
 TG.setLang = function (lang) {
-  document.documentElement.setAttribute("data-lang", lang);
+  TG.applyLang(lang);
   try {
     localStorage.setItem("tg-lang", lang);
   } catch (e) {}
