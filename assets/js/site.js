@@ -113,8 +113,8 @@ TG.bi = function (pair) {
   if (typeof pair === "string") return TG.esc(pair);
   return (
     '<span data-lang="en">' +
-    TG.esc(pair.en || "“) +
-    ”</span>" +
+    TG.esc(pair.en || "") +
+    "</span>" +
     '<span data-lang="zh">' +
     TG.esc(pair.zh || pair.en || "") +
     "</span>"
