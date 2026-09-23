@@ -14,3 +14,20 @@
 
 # macOS
 .DS_Store
+
+# 根目录兜底 · Root-level catch-all
+# 素材习惯性先落在根目录，只靠 /_source/ 挡不住——一份 48.9 MB 的 PDF 就是
+# 这样被带进仓库的。根目录下的这些格式一律不跟踪；网站真正要用的文件都在
+# assets/ 里，不受影响。
+# Material tends to land at the repo root first, where /_source/ does not
+# reach — that is how a 48.9 MB PDF got committed once. Nothing of these
+# types at the root is tracked; everything the site actually serves lives
+# under assets/ and is unaffected.
+/*.pdf
+/*.pptx
+/*.ppt
+/*.docx
+/*.doc
+/*.ai
+/*.psd
+/*.zip

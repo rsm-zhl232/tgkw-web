@@ -196,6 +196,9 @@ a.ann:hover .arw{ transform:translateX(3px); }
 .brand{ display:flex; align-items:center; gap:11px; flex:0 0 auto; }
 .brand img{ height:26px; width:auto; }
 .brand__txt{ font-size:14px; font-weight:600; letter-spacing:.01em; line-height:1.1; color:#F2F1ED; }
+/* Chinese sets heavier than caps Latin at the same size, and needs no tracking. */
+html[data-lang="zh"] .brand__txt{ font-size:15.5px; letter-spacing:.04em; }
+html[data-lang="zh"] .brand__txt small{ letter-spacing:.22em; }
 .brand__txt small{ display:block; font-family:var(--font-mono); font-size:9.5px;
   letter-spacing:.18em; color:rgba(242,241,237,.42); font-weight:400; text-transform:uppercase; }
 
@@ -851,6 +854,22 @@ a.loop__node:hover{ border-color:var(--brand-lift); }
   .loop__orbit{ opacity:1; animation:none; }
   .loop__core,.loop__node{ opacity:1; transform:none; }
 }
+
+/* ---- 23g. Footer QR codes -----------------------------------------------
+   Sits at the bottom of the footer's left column. The codes keep a white
+   plate because a scanner needs the quiet zone light — inverting them onto
+   the dark footer would stop them scanning on many phones.
+   ------------------------------------------------------------------------ */
+.qr{ display:flex; gap:18px; margin-top:26px; }
+.qr figure{ margin:0; width:88px; }
+.qr img{ width:88px; height:88px; object-fit:contain;
+  background:#fff; padding:5px; border-radius:var(--radius);
+  border:1px solid var(--line); transition:.25s var(--ease); }
+.qr figure:hover img{ border-color:color-mix(in srgb, var(--brand-lift) 55%, var(--line));
+  transform:translateY(-2px); }
+.qr figcaption{ margin-top:8px; font-family:var(--font-mono); font-size:10px;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--faint); line-height:1.4; }
+@media (max-width:520px){ .qr figure,.qr img{ width:76px; } .qr img{ height:76px; } }
 
 /* ---- 24. Pre-hydration guard -------------------------------------------- */
 header[data-hdr]{ position:fixed; inset:0 0 auto 0; z-index:100; height:68px; }

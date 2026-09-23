@@ -289,6 +289,43 @@ The figures on the site are from the company decks, not invented:
   Project figures (Hainan ¥200m, Yuexiwan 1,740 conflicts, Dongguan Museum
   874 issues, KFC and Huazhu cycle times) — the DFC project applications deck.
 
+### 口径冲突的裁决 · Resolved conflicts
+
+多份资料数字不一致时的取舍，2026-09-23 确认：
+
+Where the decks disagree, these are the decisions made on 2026-09-23:
+
+| 项目 | 采用 | 其他资料的说法 |
+|---|---|---|
+| 第三款产品代号 | **ADC 天宫·金翼** | 生态平台文档写 DCS 分布式管理平台 |
+| 国家发明专利 | **13 项** | 企业介绍 PPT 与生态平台文档写 11 项 |
+| 在申专利 | **100 余项** | 生态平台文档写 50+ |
+| 标杆项目案例 | **1000+** | 生态平台文档写 300+ 项目实例 |
+| 海南双中心节省占比 | **16.7%** | 项目应用 PPT 写 5.7% |
+
+原则是取数值较大／较新的一方。海南那条要特别注意：16.7% 对应的是文物
+艺术品交易中心单体的投资额，不是双中心合计的 35 亿元——2÷35≈5.7%，所以
+改用 16.7% 时必须同时拿掉「总投资 35 亿元」，否则页面上的算术自相矛盾。
+现在首页只写百分比，不写投资基数。
+
+The rule is to take the larger or more recent figure. Note the Hainan one:
+16.7% is against the art trading centre alone, not the ¥3.5bn for both
+centres — ¥200m ÷ ¥3.5bn is 5.7%. So the "¥3.5bn" anchor had to come out
+with the switch to 16.7%, or the arithmetic on the page contradicts itself.
+The home page now states the percentage without an investment base.
+
+生态平台文档还提供了网站尚未采用的数据：100+ 软件研发人员、2 万注册用户 /
+2000 日活、DFC 覆盖 14 个专业（网站现写「六大专业」，偏窄）、北医三院缩短
+工期 25%／节约造价 8%、TAI+DFC 联动使项目周期平均缩短 70%。研发总投入该
+文档写 1.5 亿元，网站仍写「超过 1 亿元」，未改。
+
+The ecosystem deck also carries figures the site does not yet use: 100+ R&D
+staff, 20,000 registered users / 2,000 daily active, DFC covering 14
+disciplines (the site still says six, which understates it), PUH3 at 25%
+shorter programme and 8% lower cost, TAI+DFC cutting project cycles by 70%.
+That deck puts total R&D investment at ¥150m; the site still says "over
+¥100m" and was left unchanged.
+
 资料改版时，这里和 `index.html`、`about.html` 都要同步更新。
 
 Update these here and on `index.html`, `about.html` when the decks are revised.

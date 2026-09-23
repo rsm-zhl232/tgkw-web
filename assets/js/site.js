@@ -154,7 +154,10 @@ function renderHeader() {
     '<div class="wrap hdr__in">' +
     '<a class="brand" href="index.html">' +
     '<img src="assets/img/tgkw-logo.svg" alt="Tiangong Kaiwu" width="28" height="26">' +
-    '<span class="brand__txt">TIANGONG KAIWU<small>Digital Construction</small></span>' +
+    '<span class="brand__txt">' +
+      '<span data-lang="en">TIANGONG KAIWU</span><span data-lang="zh">天宫开物</span>' +
+      '<small><span data-lang="en">Digital Construction</span><span data-lang="zh">数字建造</span></small>' +
+    '</span>' +
     "</a>" +
     '<button class="burger" aria-expanded="false" aria-controls="tg-nav" aria-label="Menu"><span></span></button>' +
     '<nav class="nav" id="tg-nav">' +
@@ -216,12 +219,21 @@ function renderFooter() {
     "<div>" +
     '<a class="brand" href="index.html" style="margin-bottom:20px">' +
     '<img src="assets/img/tgkw-logo.svg" alt="Tiangong Kaiwu" width="28" height="26">' +
-    '<span class="brand__txt">TIANGONG KAIWU<small>Digital Construction</small></span></a>' +
+    '<span class="brand__txt">' +
+      '<span data-lang="en">TIANGONG KAIWU</span><span data-lang="zh">天宫开物</span>' +
+      '<small><span data-lang="en">Digital Construction</span><span data-lang="zh">数字建造</span></small>' +
+    '</span></a>' +
     '<p class="small" style="max-width:34ch">' +
     '<span data-lang="en">Digital construction software and design delivery, from Shenzhen to projects worldwide.</span>' +
     '<span data-lang="zh">数字建造软件与设计交付服务，从深圳走向全球项目。</span></p>' +
     '<p class="mono" style="color:var(--faint);margin-top:18px">' +
     'tgkw.com &nbsp;·&nbsp; <a href="https://tgtai.com" target="_blank" rel="noopener">tgtai.com</a></p>' +
+    '<div class="qr">' +
+      '<figure><img src="assets/img/social/wechat-qr.png" alt="" loading="lazy" decoding="async">' +
+        '<figcaption><span data-lang="en">WeChat</span><span data-lang="zh">公众号</span><br>天宫DFC</figcaption></figure>' +
+      '<figure><img src="assets/img/social/douyin-qr.png" alt="" loading="lazy" decoding="async">' +
+        '<figcaption><span data-lang="en">Douyin</span><span data-lang="zh">抖音号</span><br>DFCBIM</figcaption></figure>' +
+    '</div>' +
     "</div>" +
     '<div class="ftr__cols">' +
     cols +
