@@ -430,8 +430,18 @@ logos SVG or transparent PNG at 32px tall.
 
 ## 还没接上的 · Still to wire up
 
-- 联系表单没有提交地址——需要接后端或表单服务。
-  Contact form posts nowhere — connect it to a backend or a form service.
+- 联系表单目前是 mailto 兜底：`site.js` 的 `initContactForm()` 把填写内容拼成
+  一封发往 `ac@qdtg.com` 的邮件，交给访客的邮件客户端。这只是过渡方案——
+  访客没装邮件客户端就没反应，且 mailto 不回传成功与否，所以提交后的提示
+  里始终附上邮箱和电话全文。正式方案仍是接表单服务或云函数（会议纪要第 6 条
+  「表单信息如何进入公司邮箱或后台」）。换掉时改 `initContactForm()` 即可。
+  The contact form currently falls back to mailto: `initContactForm()` in
+  `site.js` composes the fields into a message to `ac@qdtg.com` and hands it to
+  the visitor's mail client. This is an interim measure — it does nothing if no
+  mail client is configured, and mailto reports no success or failure, which is
+  why the confirmation always repeats the address and phone number in full. A
+  form service or cloud function is still the real answer; swap it in by
+  replacing `initContactForm()`.
 - 国际标价未定。`dfc.html` 现在挂的是国内人民币个人套装价格（￥199/月、￥2,380/年），
   海外市场如需另一套标价，需补充。
   International list pricing is not set. `dfc.html` currently shows the domestic

@@ -1005,6 +1005,80 @@ function renderProductMatrix() {
     wip.map(row).join("");
 }
 
+/* ---- Contact form ------------------------------------------------------- */
+/* Interim handling until the form is wired to a backend or form service:
+   compose the enquiry into a mailto: and hand it to the visitor's mail client.
+   That client may not exist or may be unconfigured, and mailto gives us no
+   success signal either way, so the note shown afterwards always repeats the
+   address in full — the visitor is never left guessing whether it sent. */
+var CONTACT_TO = "ac@qdtg.com";
+/* Most mail clients truncate somewhere past ~2000 characters in the URL. */
+var MAILTO_MAX = 1900;
+
+function initContactForm() {
+  var form = document.querySelector("#tg-form");
+  if (!form) return;
+  form.removeAttribute("onsubmit");
+  var note = form.querySelector(".form-note");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var zh = TG.lang() === "zh";
+    var v = function (n) {
+      var el = form.querySelector('[name="' + n + '"]');
+      return el ? el.value.trim() : "";
+    };
+    var sel = form.querySelector('[name="topic"]');
+    var topic = sel ? sel.options[sel.selectedIndex].text : "";
+    var who = v("company") || v("name");
+
+    var L = zh
+      ? { subj: "官网咨询", name: "姓名", org: "公司", mail: "邮箱",
+          topic: "咨询方向", msg: "项目与工期", from: "来自天宫开物官网联系表单" }
+      : { subj: "Website enquiry", name: "Name", org: "Company", mail: "Email",
+          topic: "Topic", msg: "Project & timeline", from: "Sent from the Tiangong Kaiwu website form" };
+
+    var subject = "[" + L.subj + "] " + topic + (who ? " — " + who : "");
+    var body = [
+      L.name + ": " + v("name"),
+      L.org + ": " + v("company"),
+      L.mail + ": " + v("email"),
+      L.topic + ": " + topic,
+      "",
+      L.msg + ":",
+      v("message"),
+      "",
+      "— " + L.from,
+    ].join("\n");
+
+    var url = "mailto:" + CONTACT_TO +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(body);
+
+    var tooLong = url.length > MAILTO_MAX;
+    if (!tooLong) window.location.href = url;
+
+    if (note) {
+      note.innerHTML = tooLong
+        ? (zh
+            ? "内容较长，邮件客户端可能无法完整带出。请直接发送至 " +
+              '<a class="link" href="mailto:' + CONTACT_TO + '">' + CONTACT_TO + "</a>" +
+              "，或致电 0755-23907080。"
+            : "That message is long enough that a mail client may truncate it. Please email " +
+              '<a class="link" href="mailto:' + CONTACT_TO + '">' + CONTACT_TO + "</a>" +
+              " directly, or call +86 755 2390 7080.")
+        : (zh
+            ? "已为你打开邮件客户端，请确认后发送。若没有反应，请直接发送至 " +
+              '<a class="link" href="mailto:' + CONTACT_TO + '">' + CONTACT_TO + "</a>" +
+              "，或致电 0755-23907080。"
+            : "Your mail client should now be open — review and send. If nothing opened, email " +
+              '<a class="link" href="mailto:' + CONTACT_TO + '">' + CONTACT_TO + "</a>" +
+              " directly, or call +86 755 2390 7080.");
+      note.hidden = false;
+    }
+  });
+}
+
 /* ---- Client wall -------------------------------------------------------- */
 function renderClients() {
   var host = document.querySelector("[data-clients]");
@@ -1037,6 +1111,7 @@ document.addEventListener("DOMContentLoaded", function () {
   renderDocs();
   renderProductLoop();
   renderProductMatrix();
+  initContactForm();
   initReveal();
   initHeroModel();
 });

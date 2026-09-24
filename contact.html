@@ -56,8 +56,7 @@ d.setAttribute("data-lang",l);d.setAttribute("lang",l==="zh"?"zh-CN":"en");}catc
           </dl>
         </div>
 
-        <form class="reveal" data-delay="120" id="tg-form"
-              onsubmit="event.preventDefault(); this.querySelector('.form-note').hidden=false;">
+        <form class="reveal" data-delay="120" id="tg-form">
           <div class="grid grid--2" style="gap:20px">
             <div class="field">
               <label for="f-name"><span data-lang="en">Name</span><span data-lang="zh">姓名</span></label>
@@ -90,10 +89,9 @@ d.setAttribute("data-lang",l);d.setAttribute("lang",l==="zh"?"zh-CN":"en");}catc
             <button class="btn btn--primary" type="submit">
               <span data-lang="en">Send</span><span data-lang="zh">提交</span> <span class="arw">→</span></button>
           </div>
-          <p class="small form-note" hidden style="color:var(--brand-lift)">
-            <span data-lang="en">Front-end only — connect this form to your backend or a form service.</span>
-            <span data-lang="zh">当前为前端演示——请将表单接入后端或表单服务。</span>
-          </p>
+          <!-- Filled in by initContactForm() in site.js; the copy differs
+               depending on whether the mailto was handed over or was too long. -->
+          <p class="small form-note" role="status" hidden style="color:var(--brand-lift)"></p>
         </form>
       </div>
     </div>
