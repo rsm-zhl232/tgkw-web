@@ -432,8 +432,10 @@ logos SVG or transparent PNG at 32px tall.
 
 - 联系表单没有提交地址——需要接后端或表单服务。
   Contact form posts nowhere — connect it to a backend or a form service.
-- `dfc.html` 上的价格是 `$—` 占位——需要定国际标价。
-  Prices on `dfc.html` are `$—` placeholders; set international list prices.
+- 国际标价未定。`dfc.html` 现在挂的是国内人民币个人套装价格（￥199/月、￥2,380/年），
+  海外市场如需另一套标价，需补充。
+  International list pricing is not set. `dfc.html` currently shows the domestic
+  RMB individual-package prices; an overseas price list still needs to be added.
 - `contact.html` 的电话号码是空的。
   Phone number on `contact.html` is blank.
 - `hello@tgkw.com` 是建议地址，不是真实邮箱。

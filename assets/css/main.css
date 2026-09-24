@@ -213,6 +213,13 @@ html[data-lang="zh"] .brand__txt small{ letter-spacing:.22em; }
   height:1px; background:var(--brand-lift);
 }
 .hdr__act{ display:flex; align-items:center; gap:10px; flex:0 0 auto; }
+/* Way back to the old tgkw.com. Deliberately quiet — it is a route for people
+   who already know what they are looking for, not a headline destination. */
+.hdr__old{ display:inline-flex; align-items:center; gap:5px; white-space:nowrap;
+  font-size:12.5px; color:rgba(242,241,237,.55); transition:color .2s var(--ease); }
+.hdr__old:hover{ color:var(--fg); }
+.hdr__old .arw{ font-size:11px; }
+@media (max-width:700px){ .hdr__old{ display:none; } }
 
 .lang{ display:flex; border:1px solid rgba(242,241,237,.16); border-radius:var(--radius); overflow:hidden; }
 .lang button{
@@ -450,18 +457,23 @@ a.card:hover{ border-color:color-mix(in srgb, var(--brand-lift) 55%, var(--line)
 .phero .lede{ margin-top:clamp(18px,2vw,26px); }
 
 /* ---- 20. Editions / pricing --------------------------------------------- */
-.plans{ display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+.plans{ display:grid; grid-template-columns:repeat(3,1fr); gap:0;
   border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; }
-@media (max-width:1100px){ .plans{ grid-template-columns:repeat(2,1fr); } }
-@media (max-width:660px){ .plans{ grid-template-columns:1fr; } }
+@media (max-width:920px){ .plans{ grid-template-columns:1fr; } }
 .plan{ padding:clamp(24px,2.2vw,32px); border-right:1px solid var(--line); background:var(--bg-2); }
 .plan:last-child{ border-right:0; }
-@media (max-width:1100px){ .plan:nth-child(2n){ border-right:0; } .plan{ border-bottom:1px solid var(--line); } }
-@media (max-width:660px){ .plan{ border-right:0; } }
+@media (max-width:920px){ .plan{ border-right:0; border-bottom:1px solid var(--line); }
+  .plan:last-child{ border-bottom:0; } }
 .plan--hl{ background:color-mix(in srgb, var(--brand) 12%, var(--bg-2)); }
 .plan__n{ font-size:18px; font-weight:500; }
 .plan__p{ font-size:clamp(22px,2vw,28px); font-weight:500; letter-spacing:-.02em; margin-top:14px; }
 .plan__p small{ font-size:13px; color:var(--faint); font-weight:400; letter-spacing:0; }
+/* Second price line, e.g. the annual rate under the monthly one. */
+.plan__p2{ margin-top:7px; font-size:13.5px; color:var(--muted); }
+.plan__tag{ display:inline-block; margin-top:12px; padding:3px 10px; border-radius:100px;
+  border:1px solid color-mix(in srgb, var(--brand-lift) 38%, var(--line));
+  font-family:var(--font-mono); font-size:10px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--brand-lift); }
 .plan__d{ font-size:14px; color:var(--muted); margin-top:14px; }
 .plan ul{ margin-top:18px; display:grid; gap:9px; }
 .plan ul li{ font-size:13.5px; color:var(--muted); padding-left:16px; position:relative; }
@@ -508,6 +520,28 @@ a.card:hover{ border-color:color-mix(in srgb, var(--brand-lift) 55%, var(--line)
 .gallery__strip button:hover{ border-color:color-mix(in srgb, var(--brand-lift) 55%, var(--line)); }
 .gallery__strip button[aria-current="true"]{ border-color:var(--brand-lift); }
 .gallery__strip button[aria-current="true"] img{ opacity:1; }
+
+/* ---- 21b. Edition comparison --------------------------------------------
+   The full feature matrix behind the three plan cards. Scrolls sideways on a
+   phone rather than reflowing: a tick belongs to a column, and stacking the
+   columns loses which plan a row is talking about. The first column is
+   sticky so the feature name stays readable while scrolling.
+   ------------------------------------------------------------------------ */
+.cmp-wrap{ margin-top:clamp(28px,3.5vw,44px); overflow-x:auto;
+  border:1px solid var(--line); border-radius:var(--radius-lg); background:var(--bg-2); }
+.cmp{ width:100%; min-width:560px; border-collapse:collapse; }
+.cmp th,.cmp td{ padding:13px clamp(12px,1.4vw,20px); text-align:center;
+  border-bottom:1px solid var(--line-soft); font-size:14px; }
+.cmp tr:last-child th,.cmp tr:last-child td{ border-bottom:0; }
+.cmp thead th{ font-size:14px; font-weight:500; color:var(--fg);
+  border-bottom:1px solid var(--line); background:var(--bg-3); white-space:nowrap; }
+.cmp th[scope="row"]{ text-align:left; font-weight:400; color:var(--muted);
+  position:sticky; left:0; background:var(--bg-2); white-space:nowrap; }
+.cmp thead th:first-child{ position:sticky; left:0; background:var(--bg-3); text-align:left; }
+.cmp .yes{ color:var(--brand-lift); font-size:15px; }
+.cmp .no{ color:var(--faint); font-size:15px; }
+.cmp tbody tr:hover th[scope="row"]{ color:var(--fg); }
+.cmp-note{ margin-top:14px; font-size:13px; color:var(--faint); line-height:1.6; }
 
 /* ---- 23. Media frame ---------------------------------------------------- */
 .frame{ aspect-ratio:16/9; border:1px solid var(--line); border-radius:var(--radius-lg);

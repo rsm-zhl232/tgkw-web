@@ -64,6 +64,12 @@ TG.footer = [
       { href: "about.html", en: "About us", zh: "关于我们" },
       { href: "contact.html", en: "Contact", zh: "联系我们" },
       {
+        href: "https://www.tgkw.com",
+        en: "Old site (tgkw.com)",
+        zh: "进入旧官网",
+        ext: true,
+      },
+      {
         href: "https://tgtai.com",
         en: "tgtai.com",
         zh: "tgtai.com",
@@ -181,6 +187,12 @@ function renderHeader() {
     links +
     "</nav>" +
     '<div class="hdr__act">' +
+    /* The old tgkw.com still holds the help docs, tutorials and the
+       resource library; this is the way back to them. Hidden below 700px,
+       where the footer carries the same link. */
+    '<a class="hdr__old" href="https://www.tgkw.com" target="_blank" rel="noopener">' +
+      '<span data-lang="en">Old site</span><span data-lang="zh">旧版官网</span>' +
+      '<span class="arw">&#8599;</span></a>' +
     '<div class="lang" role="group" aria-label="Language">' +
     '<button data-set-lang="en" aria-pressed="false">EN</button>' +
     '<button data-set-lang="zh" aria-pressed="false">中文</button>' +
