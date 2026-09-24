@@ -438,8 +438,8 @@ logos SVG or transparent PNG at 32px tall.
   RMB individual-package prices; an overseas price list still needs to be added.
 - `contact.html` 的电话号码是空的。
   Phone number on `contact.html` is blank.
-- `hello@tgkw.com` 是建议地址，不是真实邮箱。
-  `hello@tgkw.com` is a suggested address, not a live one.
+- `contact@tgkw.com` 是建议地址，不是真实邮箱。
+  `contact@tgkw.com` is a suggested address, not a live one.
 - GitHub Pages 在国内访问不稳。正式对外应走国内托管（腾讯云 COS / 阿里云 OSS + CDN，
   绑 tgkw.com 子域名，已有粤ICP备2022081818号）。
   GitHub Pages is unreliable from mainland China. For client-facing use, host
