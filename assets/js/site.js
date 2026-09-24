@@ -255,7 +255,13 @@ function renderFooter() {
     '<p class="small" style="max-width:34ch">' +
     '<span data-lang="en">Digital construction software and design delivery, from Shenzhen to projects worldwide.</span>' +
     '<span data-lang="zh">数字建造软件与设计交付服务，从深圳走向全球项目。</span></p>' +
-    '<p class="mono" style="color:var(--faint);margin-top:18px">' +
+    '<p class="small" style="margin-top:16px;color:var(--faint)">' +
+      '<span data-lang="en">7F, Tower A, SZGE Building, Futian Free Trade Zone, Shenzhen</span>' +
+      '<span data-lang="zh">深圳市福田保税区深装总大厦 A 座 7 楼</span><br>' +
+      '<a href="tel:+8675523907080">' +
+        '<span data-lang="en">+86 755 2390 7080</span><span data-lang="zh">0755-23907080</span></a>' +
+      ' &nbsp;·&nbsp; <a href="mailto:ac@qdtg.com">ac@qdtg.com</a></p>' +
+    '<p class="mono" style="color:var(--faint);margin-top:14px">' +
     'tgkw.com &nbsp;·&nbsp; <a href="https://tgtai.com" target="_blank" rel="noopener">tgtai.com</a></p>' +
     '<div class="qr">' +
       '<figure><img src="assets/img/social/wechat-qr.png" alt="" loading="lazy" decoding="async">' +
